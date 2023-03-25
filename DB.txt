@@ -1,0 +1,47 @@
+컬럼:타입:길이:기타
+number:int::unsigned, auto_increment, primary key
+name:char:12:
+password:char:16:
+email:char:50:
+hompage:char:60:
+subject:char:60:
+memo:text:::
+count:smallint::unsigned
+ip:char:15:
+wrietime:int::unsigned
+
+CREATE TABLE board (
+  board_number NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1) PRIMARY KEY,
+  name CHAR(12),
+  password CHAR(16),
+  email CHAR(50),
+  homepage CHAR(60),
+  subject CHAR(60),
+  memo CLOB,
+  count NUMBER(5) UNSIGNED,
+  ip CHAR(15),
+  wrietime NUMBER(10) UNSIGNED
+);
+
+CREATE TABLE board (
+  board_number NUMBER PRIMARY KEY,
+  name CHAR(12),
+  password CHAR(16),
+  email CHAR(50),
+  homepage CHAR(60),
+  subject CHAR(60),
+  memo CLOB,
+  count NUMBER(5),
+  ip CHAR(15),
+  wrietime NUMBER(10)
+);
+
+CREATE TRIGGER board_trigger
+BEFORE INSERT ON board
+FOR EACH ROW
+BEGIN
+  SELECT board_seq.NEXTVAL
+  INTO   :new.board_number
+  FROM   dual;
+END;
+/

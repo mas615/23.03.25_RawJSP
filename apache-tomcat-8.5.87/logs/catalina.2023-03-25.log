@@ -1,0 +1,617 @@
+25-Mar-2023 00:24:02.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 00:24:02.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 00:24:02.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 00:24:02.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 00:24:02.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 00:24:02.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 00:24:02.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 00:24:02.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 00:24:02.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 00:24:02.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:24:02.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:24:02.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 00:24:02.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 00:24:02.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 00:24:02.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 00:24:02.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 00:24:02.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 00:24:02.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 00:24:02.707 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 00:24:02.707 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 00:24:02.707 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 00:24:02.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:24:02.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:24:02.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 00:24:02.709 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 00:24:02.710 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 00:24:02.710 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 00:24:02.716 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 00:24:02.744 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+25-Mar-2023 00:24:02.747 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:857)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:646)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:669)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:556)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:226)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1296)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1309)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:231)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:693)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:76)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1073)
+		... 11 more
+25-Mar-2023 00:24:02.761 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 464 ms
+25-Mar-2023 00:24:02.798 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 00:24:02.798 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 00:24:02.798 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 00:24:03.013 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [215] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:03.026 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 00:24:03.390 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [364] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:03.391 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 00:24:03.419 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [28] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:03.420 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 00:24:03.444 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [24] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:03.445 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 00:24:03.461 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [16] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:03.464 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 701 ms
+25-Mar-2023 00:24:31.787 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 00:24:31.793 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 00:24:31.796 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 00:24:31.803 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 00:24:31.819 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 00:24:31.837 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 380 ms
+25-Mar-2023 00:24:31.869 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 00:24:31.869 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 00:24:31.869 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 00:24:32.080 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [209] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:32.082 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 00:24:32.323 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [241] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:32.324 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 00:24:32.352 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [28] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:32.353 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 00:24:32.378 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [25] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:32.379 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 00:24:32.394 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [14] 밀리초에 완료되었습니다.
+25-Mar-2023 00:24:32.396 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 00:24:32.431 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 583 ms
+25-Mar-2023 00:24:46.066 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8000"]을(를) 일시 정지 중
+25-Mar-2023 00:24:46.081 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+25-Mar-2023 00:24:46.094 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8000"]을(를) 중지시킵니다.
+25-Mar-2023 00:24:46.110 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8000"]을(를) 소멸시킵니다.
+25-Mar-2023 00:33:28.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:33:28.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 00:33:28.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 00:33:28.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 00:33:28.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 00:33:28.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 00:33:28.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 00:33:28.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 00:33:28.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 00:33:28.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 00:33:28.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 00:33:28.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:33:28.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:33:28.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 00:33:28.646 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 00:33:28.646 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 00:33:28.646 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 00:33:28.651 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 00:33:28.667 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 00:33:28.687 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 384 ms
+25-Mar-2023 00:33:28.718 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 00:33:28.718 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 00:33:28.718 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 00:33:28.912 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [194] 밀리초에 완료되었습니다.
+25-Mar-2023 00:33:28.912 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 00:33:29.145 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [233] 밀리초에 완료되었습니다.
+25-Mar-2023 00:33:29.145 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 00:33:29.176 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [31] 밀리초에 완료되었습니다.
+25-Mar-2023 00:33:29.176 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 00:33:29.192 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [16] 밀리초에 완료되었습니다.
+25-Mar-2023 00:33:29.192 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 00:33:29.208 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [16] 밀리초에 완료되었습니다.
+25-Mar-2023 00:33:29.208 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 00:33:29.239 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 546 ms
+25-Mar-2023 00:37:07.089 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8000"]을(를) 일시 정지 중
+25-Mar-2023 00:37:07.089 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+25-Mar-2023 00:37:07.113 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8000"]을(를) 중지시킵니다.
+25-Mar-2023 00:37:07.130 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8000"]을(를) 소멸시킵니다.
+25-Mar-2023 00:37:39.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 00:37:39.429 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 00:37:39.469 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 00:37:39.490 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 368 ms
+25-Mar-2023 00:37:39.520 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 00:37:39.521 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 00:37:39.530 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 00:37:39.745 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [213] 밀리초에 완료되었습니다.
+25-Mar-2023 00:37:39.747 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 00:37:40.005 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [258] 밀리초에 완료되었습니다.
+25-Mar-2023 00:37:40.006 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 00:37:40.032 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [26] 밀리초에 완료되었습니다.
+25-Mar-2023 00:37:40.033 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 00:37:40.058 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [24] 밀리초에 완료되었습니다.
+25-Mar-2023 00:37:40.059 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 00:37:40.074 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [15] 밀리초에 완료되었습니다.
+25-Mar-2023 00:37:40.077 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 00:37:40.107 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 614 ms
+25-Mar-2023 01:08:51.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 01:08:51.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 01:08:51.649 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 01:08:51.681 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 01:08:51.704 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 379 ms
+25-Mar-2023 01:08:51.729 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 01:08:51.729 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 01:08:51.729 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 01:08:51.938 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [207] 밀리초에 완료되었습니다.
+25-Mar-2023 01:08:51.939 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 01:08:52.209 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [270] 밀리초에 완료되었습니다.
+25-Mar-2023 01:08:52.210 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 01:08:52.236 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [26] 밀리초에 완료되었습니다.
+25-Mar-2023 01:08:52.238 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 01:08:52.262 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [25] 밀리초에 완료되었습니다.
+25-Mar-2023 01:08:52.263 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 01:08:52.279 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [16] 밀리초에 완료되었습니다.
+25-Mar-2023 01:08:52.282 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 01:08:52.317 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 610 ms
+25-Mar-2023 01:11:35.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 01:11:35.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 01:11:35.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 01:11:35.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 01:11:35.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 01:11:35.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 01:11:35.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 01:11:35.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 01:11:35.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 01:11:35.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 01:11:35.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 01:11:35.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 01:11:35.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 01:11:35.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 01:11:35.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 01:11:35.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 01:11:35.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 01:11:35.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 01:11:35.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 01:11:35.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 01:11:35.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 01:11:35.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 01:11:35.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 01:11:35.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 01:11:35.218 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 01:11:35.219 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 01:11:35.219 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 01:11:35.222 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 01:11:35.250 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 01:11:35.270 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 379 ms
+25-Mar-2023 01:11:35.298 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 01:11:35.301 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 01:11:35.308 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 01:11:35.512 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [201] 밀리초에 완료되었습니다.
+25-Mar-2023 01:11:35.513 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 01:11:35.770 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [257] 밀리초에 완료되었습니다.
+25-Mar-2023 01:11:35.771 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 01:11:35.793 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [22] 밀리초에 완료되었습니다.
+25-Mar-2023 01:11:35.794 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 01:11:35.821 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [27] 밀리초에 완료되었습니다.
+25-Mar-2023 01:11:35.822 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 01:11:35.838 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [16] 밀리초에 완료되었습니다.
+25-Mar-2023 01:11:35.841 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 01:11:35.874 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 603 ms
+25-Mar-2023 03:19:59.906 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8000"]을(를) 일시 정지 중
+25-Mar-2023 03:19:59.917 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+25-Mar-2023 03:19:59.933 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8000"]을(를) 중지시킵니다.
+25-Mar-2023 03:19:59.951 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8000"]을(를) 소멸시킵니다.
+25-Mar-2023 03:20:03.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 03:20:03.927 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 03:20:03.938 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 03:20:03.953 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 03:20:03.970 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 381 ms
+25-Mar-2023 03:20:04.012 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 03:20:04.012 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 03:20:04.022 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 03:20:04.245 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [220] 밀리초에 완료되었습니다.
+25-Mar-2023 03:20:04.247 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 03:20:04.502 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [255] 밀리초에 완료되었습니다.
+25-Mar-2023 03:20:04.503 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 03:20:04.529 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [26] 밀리초에 완료되었습니다.
+25-Mar-2023 03:20:04.530 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 03:20:04.552 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [22] 밀리초에 완료되었습니다.
+25-Mar-2023 03:20:04.553 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 03:20:04.566 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [13] 밀리초에 완료되었습니다.
+25-Mar-2023 03:20:04.569 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 03:20:04.597 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 614 ms
+25-Mar-2023 11:34:01.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 11:34:01.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 11:34:01.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 11:34:01.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 11:34:01.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 11:34:01.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 11:34:01.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 11:34:01.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 11:34:01.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 11:34:01.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 11:34:01.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 11:34:01.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 11:34:01.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 11:34:01.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 11:34:01.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 11:34:01.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 11:34:01.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 11:34:01.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 11:34:01.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 11:34:01.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 11:34:01.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 11:34:01.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 11:34:01.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 11:34:01.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 11:34:01.625 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 11:34:01.625 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 11:34:01.625 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 11:34:01.629 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 11:34:01.653 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 11:34:01.668 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 412 ms
+25-Mar-2023 11:34:01.700 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 11:34:01.700 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 11:34:01.700 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 11:34:01.895 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [195] 밀리초에 완료되었습니다.
+25-Mar-2023 11:34:01.895 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 11:34:02.307 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [412] 밀리초에 완료되었습니다.
+25-Mar-2023 11:34:02.307 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 11:34:02.335 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [28] 밀리초에 완료되었습니다.
+25-Mar-2023 11:34:02.336 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 11:34:02.361 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [25] 밀리초에 완료되었습니다.
+25-Mar-2023 11:34:02.362 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 11:34:02.378 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [16] 밀리초에 완료되었습니다.
+25-Mar-2023 11:34:02.380 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 11:34:02.405 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 732 ms
+25-Mar-2023 11:35:34.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 11:35:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 11:35:34.184 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 11:35:34.218 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 11:35:34.240 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 375 ms
+25-Mar-2023 11:35:34.284 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 11:35:34.285 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 11:35:34.317 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 11:35:34.526 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [207] 밀리초에 완료되었습니다.
+25-Mar-2023 11:35:34.528 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 11:35:34.777 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [249] 밀리초에 완료되었습니다.
+25-Mar-2023 11:35:34.779 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 11:35:34.807 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [28] 밀리초에 완료되었습니다.
+25-Mar-2023 11:35:34.808 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 11:35:34.829 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [21] 밀리초에 완료되었습니다.
+25-Mar-2023 11:35:34.829 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 11:35:34.845 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [15] 밀리초에 완료되었습니다.
+25-Mar-2023 11:35:34.847 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 11:35:34.877 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 625 ms
+25-Mar-2023 16:38:26.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 16:38:26.899 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 16:38:26.931 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 16:38:26.948 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 386 ms
+25-Mar-2023 16:38:26.979 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 16:38:26.979 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 16:38:26.989 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 16:38:27.198 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [193] 밀리초에 완료되었습니다.
+25-Mar-2023 16:38:27.201 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 16:38:27.509 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [309] 밀리초에 완료되었습니다.
+25-Mar-2023 16:38:27.511 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 16:38:27.544 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [33] 밀리초에 완료되었습니다.
+25-Mar-2023 16:38:27.546 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 16:38:27.577 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [31] 밀리초에 완료되었습니다.
+25-Mar-2023 16:38:27.578 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 16:38:27.599 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [21] 밀리초에 완료되었습니다.
+25-Mar-2023 16:38:27.603 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 16:38:27.635 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 678 ms
+25-Mar-2023 21:15:59.407 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:15:59.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:15:59.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 21:15:59.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 21:15:59.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 21:15:59.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 21:15:59.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 21:15:59.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 21:15:59.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 21:15:59.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 21:15:59.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 21:15:59.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 21:15:59.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:15:59.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:15:59.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 21:15:59.416 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 21:15:59.416 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 21:15:59.416 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 21:15:59.420 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 21:15:59.449 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 21:15:59.467 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 409 ms
+25-Mar-2023 21:15:59.503 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 21:15:59.504 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 21:15:59.513 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 21:15:59.736 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [220] 밀리초에 완료되었습니다.
+25-Mar-2023 21:15:59.738 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 21:16:00.196 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [458] 밀리초에 완료되었습니다.
+25-Mar-2023 21:16:00.197 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 21:16:00.226 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [29] 밀리초에 완료되었습니다.
+25-Mar-2023 21:16:00.227 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 21:16:00.254 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [27] 밀리초에 완료되었습니다.
+25-Mar-2023 21:16:00.256 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 21:16:00.275 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+25-Mar-2023 21:16:00.278 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 21:16:00.319 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 854 ms
+25-Mar-2023 21:31:40.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 21:31:40.973 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 21:31:41.004 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 21:31:41.020 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 368 ms
+25-Mar-2023 21:31:41.051 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 21:31:41.058 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 21:31:41.058 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 21:31:41.251 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [193] 밀리초에 완료되었습니다.
+25-Mar-2023 21:31:41.267 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 21:31:41.509 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [242] 밀리초에 완료되었습니다.
+25-Mar-2023 21:31:41.509 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 21:31:41.538 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [29] 밀리초에 완료되었습니다.
+25-Mar-2023 21:31:41.538 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 21:31:41.569 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [31] 밀리초에 완료되었습니다.
+25-Mar-2023 21:31:41.571 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 21:31:41.572 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [1] 밀리초에 완료되었습니다.
+25-Mar-2023 21:31:41.587 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 21:31:41.617 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 587 ms
+25-Mar-2023 21:39:28.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.87
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 19:32:33 UTC
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.87.0
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-20
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          20+36-2344
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:39:28.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2023 21:39:28.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2023 21:39:28.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2023 21:39:28.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2023 21:39:28.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2023 21:39:28.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\conf\logging.properties
+25-Mar-2023 21:39:28.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2023 21:39:28.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2023 21:39:28.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2023 21:39:28.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Mar-2023 21:39:28.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:39:28.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87
+25-Mar-2023 21:39:28.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\temp
+25-Mar-2023 21:39:28.972 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+25-Mar-2023 21:39:28.972 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Mar-2023 21:39:28.972 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Mar-2023 21:39:28.977 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+25-Mar-2023 21:39:29.033 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8000"]을(를) 초기화합니다.
+25-Mar-2023 21:39:29.048 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 418 ms
+25-Mar-2023 21:39:29.074 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Mar-2023 21:39:29.079 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.87]
+25-Mar-2023 21:39:29.080 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]을(를) 배치합니다.
+25-Mar-2023 21:39:29.437 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+25-Mar-2023 21:39:29.493 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\docs]에 대한 배치가 [411] 밀리초에 완료되었습니다.
+25-Mar-2023 21:39:29.495 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]을(를) 배치합니다.
+25-Mar-2023 21:39:29.814 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+25-Mar-2023 21:39:29.861 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\examples]에 대한 배치가 [366] 밀리초에 완료되었습니다.
+25-Mar-2023 21:39:29.863 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]을(를) 배치합니다.
+25-Mar-2023 21:39:29.995 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+25-Mar-2023 21:39:30.001 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\host-manager]에 대한 배치가 [138] 밀리초에 완료되었습니다.
+25-Mar-2023 21:39:30.002 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]을(를) 배치합니다.
+25-Mar-2023 21:39:30.098 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+25-Mar-2023 21:39:30.114 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\manager]에 대한 배치가 [112] 밀리초에 완료되었습니다.
+25-Mar-2023 21:39:30.114 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]을(를) 배치합니다.
+25-Mar-2023 21:39:30.199 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+25-Mar-2023 21:39:30.199 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\majun\23.03.25_JSP\apache-tomcat-8.5.87\webapps\ROOT]에 대한 배치가 [85] 밀리초에 완료되었습니다.
+25-Mar-2023 21:39:30.215 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8000"]을(를) 시작합니다.
+25-Mar-2023 21:39:30.231 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1190 ms
