@@ -1,14 +1,15 @@
 
-<%@ page language="java" import="java.sql.*" contentType="text/html;charset=KSC5601" %>
+<%@ page language="java" import="java.sql.*" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 
 <%
 
-String s_name=new String(request.getParameter("name").getBytes("8859_1"),"KSC5601");
+String s_name=new String(request.getParameter("name").getBytes("8859_1"),"UTF-8");
 String s_password=request.getParameter("password");
 String s_email=request.getParameter("email");
 String s_homepage=request.getParameter("homepage");
-String s_subject=new String(request.getParameter("subject").getBytes("8859_1"),"KSC5601");
-String s_memo=new String(request.getParameter("memo").getBytes("8859_1"),"KSC5601");
+String s_subject=new String(request.getParameter("subject").getBytes("8859_1"),"UTF-8");
+String s_memo=new String(request.getParameter("memo").getBytes("8859_1"),"UTF-8");
 String s_ip = request.getRemoteAddr(); 
 
 try {
@@ -37,8 +38,9 @@ try {
 
 <html>
 <head>
+	<meta charset="UTF-8">
 <script language=javascript>
-	self.window.alert("아아아아 aaAAAAAAAAA");
+	self.window.alert("전송완료");
 	location.href="write.html";
 </script>
 </head>
