@@ -1,0 +1,28 @@
+INSERT INTO board (name,password,email,homepage,subject,memo,ip,wrietime) VALUES('123123','123123','123123','123123','123123','123123','123123','123123');
+
+INSERT INTO board (name,password,email,homepage,subject,memo,ip,wrietime) VALUES('123123','123123',SYSDATA,'123123','123123','123123','123123','123123');
+
+CREATE TABLE BBS (
+  board_number NUMBER PRIMARY KEY,
+  name VARCHAR(12),
+  password VARCHAR(16),
+  email VARCHAR(50),
+  homepage VARCHAR(60),
+  subject VARCHAR(60),
+  memo CLOB,
+  count NUMBER(5),
+  ip CHAR(15),
+  wrietime VARCHAR(10)
+);
+
+CREATE TRIGGER BBS_trigger
+BEFORE INSERT ON BBS
+FOR EACH ROW
+BEGIN
+  SELECT board_seq.NEXTVAL
+  INTO   :new.board_number
+  FROM   dual;
+END;
+/
+
+INSERT INTO BBS (name,password,email,homepage,subject,memo,ip,wrietime) VALUES('네임','패스워드',SYSDATE,'홈페이지','제목','메모내용','123123',SYSDATE);

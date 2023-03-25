@@ -16,7 +16,7 @@ try {
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "jsp", "root");
 
-	String str_sql = "INSERT INTO board (name,password,email,homepage,subject,memo,ip,wrietime) VALUES(?,?,?,?,?,?,?,'123123')";
+	String str_sql = "INSERT INTO BBS (name,password,email,homepage,subject,memo,ip,wrietime) VALUES(?,?,?,?,?,?,?,SYSDATE)";
 	PreparedStatement pstmt = conn.prepareStatement(str_sql);
 	pstmt.setNString(1,s_name);
 	pstmt.setNString(2,s_password);
