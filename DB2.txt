@@ -25,4 +25,6 @@ BEGIN
 END;
 /
 
-INSERT INTO BBS (name,password,email,homepage,subject,memo,ip,wrietime) VALUES('네임','패스워드',SYSDATE,'홈페이지','제목','메모내용','123123',SYSDATE);
+INSERT INTO board (name,password,email,homepage,subject,memo,ip,wrietime) VALUES('123123','123123', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'), '123123','123123','123123','123123','123123');
+
+INSERT INTO BBS (name,password,email,homepage,subject,memo,ip,wrietime) VALUES('네임2','패스워드',TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'),'홈페이지','제목','메모내용','123123',SYSDATE);

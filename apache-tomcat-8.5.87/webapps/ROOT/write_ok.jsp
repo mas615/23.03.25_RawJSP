@@ -7,16 +7,18 @@
 String s_name=new String(request.getParameter("name").getBytes("8859_1"),"UTF-8");
 String s_password=request.getParameter("password");
 String s_email=request.getParameter("email");
-String s_homepage=request.getParameter("homepage");
+String s_homepage = new String(request.getParameter("homepage").getBytes("8859_1"), "UTF-8");
 String s_subject=new String(request.getParameter("subject").getBytes("8859_1"),"UTF-8");
 String s_memo=new String(request.getParameter("memo").getBytes("8859_1"),"UTF-8");
-String s_ip = request.getRemoteAddr(); 
+String s_ip = request.getRemoteAddr();
+
+ 
 
 try {
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "jsp", "root");
 
-	String str_sql = "INSERT INTO BBS (name,password,email,homepage,subject,memo,ip,wrietime) VALUES(?,?,?,?,?,?,?,SYSDATE)";
+	String str_sql = "INSERT INTO BBS (name,password,email,HOMEPAGE,subject,memo,ip,wrietime) VALUES(?,?,?,?,?,?,?,SYSDATE)";
 	PreparedStatement pstmt = conn.prepareStatement(str_sql);
 	pstmt.setNString(1,s_name);
 	pstmt.setNString(2,s_password);
@@ -41,7 +43,7 @@ try {
 	<meta charset="UTF-8">
 <script language=javascript>
 	self.window.alert("전송완료");
-	location.href="write.html";
+	location.href="list_test2.jsp";
 </script>
 </head>
 <body>
