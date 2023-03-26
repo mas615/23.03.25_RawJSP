@@ -18,7 +18,7 @@ try {
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "jsp", "root");
 
-	String str_sql = "INSERT INTO BBS (name,password,email,HOMEPAGE,subject,memo,ip,wrietime) VALUES(?,?,?,?,?,?,?,SYSDATE)";
+	String str_sql = "INSERT INTO BBS (name,password,email,HOMEPAGE,subject,memo,ip,wrietime) VALUES(?,?,?,?,?,?,?,TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";
 	PreparedStatement pstmt = conn.prepareStatement(str_sql);
 	pstmt.setNString(1,s_name);
 	pstmt.setNString(2,s_password);
@@ -43,8 +43,11 @@ try {
 	<meta charset="UTF-8">
 <script language=javascript>
 	self.window.alert("전송완료");
-	location.href="list_test2.jsp";
+	
+	<!-- location.href="list_test2.jsp"; -->
 </script>
+<% out.print(s_name); %>
+<a href="list_test2.jsp">글쓰기</a>
 </head>
 <body>
 </body>

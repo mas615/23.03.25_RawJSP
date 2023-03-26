@@ -50,14 +50,15 @@
         out.println("<td>" + rs1.getString("ip") + "</td>");
         out.println("<td>" + rs1.getString("wrietime") + "</td>");
         out.println("</tr>");
+        
     }
-    
     rs1.close();
     stmt.close();
     conn.close();
     %>
         
     </table>
+    
     <a href="write.html">글쓰기</a>
 </body>
 </html>
