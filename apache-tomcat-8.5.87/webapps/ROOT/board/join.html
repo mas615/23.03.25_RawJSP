@@ -8,7 +8,7 @@
             function check_submit(){
 
                 if (document.myForm.name.value == "") {
-                    alert('이름을 입력하세요');
+                    alert('ID을 입력하세요');
                     document.myForm.name.focus();
                     return;
 
@@ -17,18 +17,18 @@
                     document.myForm.password.focus();
                     return
 
-                }else if (document.myForm.subject.value == "") {
+                }else if (document.myForm.email.value == "") {
                     alert('이메일을 입력하세요.');
                     document.myForm.email.focus();
                     return
 
-                }else if (document.myForm.memo.value == "") {
+                }else if (document.myForm.address.value == "") {
                     alert('집주소를 입력하세요.');
                     document.myForm.email.focus();
                     return
 
                 }else {
-                    document.myForm.action = 'write_ok.jsp';
+                    document.myForm.action = 'join.jsp';
                     document.myForm.submit();
                 }
 
@@ -39,12 +39,10 @@
 
     <form name = 'myForm' method = 'post' >
         회원가입<br>
-        이름 : <input type="text" name="name" size=20 maxlength = 20> <br>
-        비밀번호 : <input type="password" name="password" size=20 maxlength = 20> <br>
+        ID : <input type="text" name="name" size=20 maxlength = 20> <br>
+        PW : <input type="password" name="password" size=20 maxlength = 20> <br>
         Email : <input type="text" name="email" size=50 maxlength = 70> <br>
         집주소 : <input type="text" name="address" size=50 maxlength = 70> <br>
-
-        <br>
         <input type='button' value='회원가입' onclick='javascript:check_submit();'>
 
     </form>
