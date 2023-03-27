@@ -1,0 +1,20 @@
+
+create table customer(
+customer_number NUMBER PRIMARY KEY,
+name varchar2(20),
+password varchar2(20),
+email varchar2(50),
+address varchar2(50)
+);
+
+CREATE SEQUENCE customer_seq START WITH 1 INCREMENT BY 1;
+
+CREATE TRIGGER customer_trigger
+BEFORE INSERT ON customer
+FOR EACH ROW
+BEGIN
+  SELECT customer_seq.NEXTVAL
+  INTO   :new.customer_number
+  FROM   dual;
+END;
+/

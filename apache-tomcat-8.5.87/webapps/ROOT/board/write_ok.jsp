@@ -44,10 +44,8 @@ try {
 <script language=javascript>
 	self.window.alert("전송완료");
 	
-	<!-- location.href="list_test2.jsp"; -->
+	location.href="list_test2.jsp";
 </script>
-<% out.print(s_name); %>
-<a href="list_test2.jsp">글쓰기</a>
 </head>
 <body>
 </body>
