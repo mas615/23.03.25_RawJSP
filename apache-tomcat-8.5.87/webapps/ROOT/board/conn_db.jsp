@@ -23,10 +23,6 @@ stmt = conn.createStatement(); // 연결 정보(conn)를 가지고 연결 통로
 e.printStackTrace();
 }
 
-/* 위 모든 문장을 예외 처리 없이 아래와 같이 표시해도 가능함.
-Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "jsp", "root");
-Statement stmt = conn.createStatement();
-*/
+
 
 %>
