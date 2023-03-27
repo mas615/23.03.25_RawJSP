@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>JSP 게시판 프로젝트 - 회원가입</title>
+        <title>JSP 게시판 프로젝트 - 로그인</title>
 
         <script language='javascript'>
 
@@ -17,18 +17,8 @@
                     document.myForm.password.focus();
                     return
 
-                }else if (document.myForm.email.value == "") {
-                    alert('이메일을 입력하세요.');
-                    document.myForm.email.focus();
-                    return
-
-                }else if (document.myForm.address.value == "") {
-                    alert('집주소를 입력하세요.');
-                    document.myForm.email.focus();
-                    return
-
                 }else {
-                    document.myForm.action = 'join.jsp';
+                    document.myForm.action = 'login.jsp';
                     document.myForm.submit();
                 }
 
@@ -38,12 +28,10 @@
     </head>
 
     <form name = 'myForm' method = 'post' >
-        회원가입<br>
+        로그인<br>
         ID : <input type="text" name="name" size=20 maxlength = 20> <br>
         PW : <input type="password" name="password" size=20 maxlength = 20> <br>
-        Email : <input type="text" name="email" size=50 maxlength = 70> <br>
-        집주소 : <input type="text" name="address" size=50 maxlength = 70> <br>
-        <input type='button' value='회원가입' onclick='javascript:check_submit();'>
+        <input type='button' value='로그인' onclick='javascript:check_submit();'>
 
     </form>
 
