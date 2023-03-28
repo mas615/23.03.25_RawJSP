@@ -6,8 +6,6 @@
 
 String s_name=new String(request.getParameter("name").getBytes("8859_1"),"UTF-8");
 String s_password=request.getParameter("password");
-String s_email=request.getParameter("email");
-String s_homepage = new String(request.getParameter("homepage").getBytes("8859_1"), "UTF-8");
 String s_subject=new String(request.getParameter("subject").getBytes("8859_1"),"UTF-8");
 String s_memo=new String(request.getParameter("memo").getBytes("8859_1"),"UTF-8");
 String s_ip = request.getRemoteAddr();
@@ -22,8 +20,8 @@ try {
 	PreparedStatement pstmt = conn.prepareStatement(str_sql);
 	pstmt.setNString(1,s_name);
 	pstmt.setNString(2,s_password);
-	pstmt.setNString(3,s_email);
-	pstmt.setNString(4,s_homepage);
+	pstmt.setNString(3,"null");
+	pstmt.setNString(4,"null");
 	pstmt.setNString(5,s_subject);
 	pstmt.setNString(6,s_memo);
 	pstmt.setNString(7,s_ip);

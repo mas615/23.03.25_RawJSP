@@ -36,11 +36,9 @@
     </head>
 
     <form name = 'myForm' method = 'post' >
-
-        이름 : <input type="text" name="name" size=20 maxlength = 20> <br>
-        비밀번호 : <input type="password" name="password" size=20 maxlength = 20> <br>
-        전자우편 : <input type="text" name="email" size=50 maxlength = 70> <br>
-        홈페이지 : <input type="text" name="homepage" size=50 maxlength = 70> <br>
+        이름 : <% out.println(session.getAttribute("userName")); %> 
+        <input type="hidden" name="name" value="<% out.println(session.getAttribute("userName")); %> "> <br>
+        <input type="hidden" name="password" value="<% out.println(session.getAttribute("userID")); %> "> <br>
         제목 : <input type="text" name="subject" size=50 maxlength = 70> <br>
         내용 : <textarea name="memo" cols=50 rows = 5 maxlength = 500></textarea> <br>
 

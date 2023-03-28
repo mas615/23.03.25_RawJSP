@@ -2,10 +2,7 @@
 <%@ include file="action/navbar.jsp" %>
 <%@ include file="action/conn_db2.jsp" %>
 
-<%
-String num=request.getParameter("num");
-
-%>
+<% String num=request.getParameter("num"); %>
 
 
 <html>

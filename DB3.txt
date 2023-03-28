@@ -1,0 +1,1 @@
+ResultSet rs3 = stmt2.executeQuery("select * from bbs where subject LIKE'%"+search+"%'");
