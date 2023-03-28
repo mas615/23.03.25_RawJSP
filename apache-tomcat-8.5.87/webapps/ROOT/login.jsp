@@ -24,13 +24,28 @@
 
         </script>
 
-    <form name = 'myForm' method = 'post' >
-        로그인<br>
-        ID : <input type="text" name="name" size=20 maxlength = 20> <br>
-        PW : <input type="password" name="password" size=20 maxlength = 20> <br>
-        <input type='button' value='로그인' onclick='javascript:check_submit();'>
+<div class="container text-center">
+    <div class="row">
+      <div class="col">
+         
+      </div>
+      <div class="col">
+                        <form name = 'myForm' method = 'post' >
+                            <br><br><br>
+                            로그인<br><br>
+                            <input type="text" name="name" size=20 maxlength = 20 placeholder="아이디"> <br><br>
+                            <input type="password" name="password" size=20 maxlength = 20 placeholder="비밀번호"> <br><br>
+                            <input type='button' class="btn btn-primary" value='로그인' onclick='javascript:check_submit();'>
+                        </form>
+      </div>
+      <div class="col">
+        
+      </div>
+    </div>
+  </div>
 
-    </form>
+
+   
 
 </body>
 </html>

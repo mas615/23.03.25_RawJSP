@@ -7,9 +7,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project_Ma</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
@@ -41,6 +42,10 @@ if(session.getAttribute("userID") != null){
         stmt.close();
         conn.close();
 }else{
+  ResultSet rs1 = stmt.executeQuery("select sysdate from dual");
+  rs1.close();
+  stmt.close();
+  conn.close();
     String C = "<li class=\"nav-item dropdown\">\n"
         + " <a class=\"nav-link active dropdown-toggle\" aria-current=\"page\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">로그인</a>\n"
         + " <ul class=\"dropdown-menu\">\n"
@@ -96,20 +101,10 @@ out.println(C);
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  로그인
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+        
+            
             </ul>
           </div>
         </div>
-      </nav>  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+      </nav>
     

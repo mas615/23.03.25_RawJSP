@@ -35,15 +35,29 @@
         </script>
    
 
-    <form name = 'myForm' method = 'post' >
-        회원가입<br>
-        ID : <input type="text" name="name" size=20 maxlength = 20> <br>
-        PW : <input type="password" name="password" size=20 maxlength = 20> <br>
-        Email : <input type="text" name="email" size=50 maxlength = 70> <br>
-        집주소 : <input type="text" name="address" size=50 maxlength = 70> <br>
-        <input type='button' value='회원가입' onclick='javascript:check_submit();'>
+   
 
-    </form>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            
+          </div>
+          <div class="col">
+                            <form name = 'myForm' method = 'post' >
+                                <br><br><br><br>
+                                <p>회원가입</p>
+                                <p><input type="text" name="name" size=20 maxlength = 20 placeholder="아이디"></p>
+                                <p><input type="password" name="password" size=20 maxlength = 20 placeholder="비밀번호"> <br></p>
+                                <p><input type="text" name="email" size=50 maxlength = 70 placeholder="이메일"><br></p>
+                                <p><input type="text" name="address" size=50 maxlength = 70 placeholder="주소"> <br></p>
+                                <input type='button' class="btn btn-primary" value='회원가입' onclick='javascript:check_submit();'>
+                            </form>
+          </div>
+          <div class="col">
+            
+          </div>
+        </div>
+      </div>
 
 </body>
 </html>

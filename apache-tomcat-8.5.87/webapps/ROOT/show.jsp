@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="action/navbar.jsp" %>
+<%@ include file="action/conn_db2.jsp" %>
 
 <%
 String num=request.getParameter("num");
@@ -13,20 +14,20 @@ String num=request.getParameter("num");
 
 
 <% 
-ResultSet rs1 = stmt.executeQuery("select * from bbs where board_number=" + num);
-if(rs1.next()){
-out.println("제목 : "+rs1.getString("subject") + "<br>");
-out.println("작성자 : "+rs1.getString("name"));
-out.println(" : "+rs1.getString("ip") + "<br>");
-out.println("Email : "+rs1.getString("email") + "<br>");
-out.println("작성일시 : "+rs1.getString("wrietime") + "<br>");
-out.println("내용 : "+rs1.getString("memo") + "<br>");
+rs2 = stmt2.executeQuery("select * from bbs where board_number=" + num);
+if(rs2.next()){
+out.println("제목 : "+rs2.getString("subject") + "<br>");
+out.println("작성자 : "+rs2.getString("name"));
+out.println(" : "+rs2.getString("ip") + "<br>");
+out.println("Email : "+rs2.getString("email") + "<br>");
+out.println("작성일시 : "+rs2.getString("wrietime") + "<br>");
+out.println("내용 : "+rs2.getString("memo") + "<br>");
 }else{
 	out.println("없는 게시글입니다.");
 }
-rs1.close();
-stmt.close();
-conn.close();
+rs2.close();
+stmt2.close();
+conn2.close();
 %>
 <a href="board.jsp">목록보기</a>
 </head>

@@ -2218,3 +2218,2429 @@ Stacktrace:]을(를) 발생시켰습니다.
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:15:19.702 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-Mar-2023 14:15:19.702 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-Mar-2023 14:15:19.703 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@386e2881')
+28-Mar-2023 14:15:36.825 SEVERE [http-nio-8000-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs1 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs1.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:15:43.991 SEVERE [http-nio-8000-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs1 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs1.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:16:43.894 SEVERE [http-nio-8000-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs1 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs1.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:16:46.759 SEVERE [http-nio-8000-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs1 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs1.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:16:49.954 SEVERE [http-nio-8000-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs1 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs1.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:19:03.862 SEVERE [http-nio-8000-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:22:17.547 SEVERE [http-nio-8000-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:22:31.379 SEVERE [http-nio-8000-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs2 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs2.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:22:32.350 SEVERE [http-nio-8000-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs2 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs2.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:22:34.181 SEVERE [http-nio-8000-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs2 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs2.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:23:40.888 SEVERE [http-nio-8000-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:23:41.705 SEVERE [http-nio-8000-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [7]에서 [/action/conn_db2.jsp]을(를) 처리하는 중 예외 발생
+
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+10: } catch (ClassNotFoundException e) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:23:42.319 SEVERE [http-nio-8000-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [7]에서 [/action/conn_db2.jsp]을(를) 처리하는 중 예외 발생
+
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+10: } catch (ClassNotFoundException e) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:23:42.835 SEVERE [http-nio-8000-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [7]에서 [/action/conn_db2.jsp]을(를) 처리하는 중 예외 발생
+
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+10: } catch (ClassNotFoundException e) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:23:43.271 SEVERE [http-nio-8000-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [7]에서 [/action/conn_db2.jsp]을(를) 처리하는 중 예외 발생
+
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+10: } catch (ClassNotFoundException e) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:26:20.349 SEVERE [http-nio-8000-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs2 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs2.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:274)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:29:09.753 SEVERE [http-nio-8000-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [19] 행에서 오류가 발생했습니다.
+conn2 cannot be resolved to a variable
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+20: // DB 연결. conn에 연결 정보 저장
+21: stmt = conn.createStatement(); // 연결 정보(conn)를 가지고 연결 통로(stmt) 생성
+22: } catch (Exception e) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [19] 행에서 오류가 발생했습니다.
+conn2 cannot be resolved to a variable
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+20: // DB 연결. conn에 연결 정보 저장
+21: stmt = conn.createStatement(); // 연결 정보(conn)를 가지고 연결 통로(stmt) 생성
+22: } catch (Exception e) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:29:13.883 SEVERE [http-nio-8000-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [19] 행에서 오류가 발생했습니다.
+conn2 cannot be resolved to a variable
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+20: // DB 연결. conn에 연결 정보 저장
+21: stmt = conn.createStatement(); // 연결 정보(conn)를 가지고 연결 통로(stmt) 생성
+22: } catch (Exception e) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [19] 행에서 오류가 발생했습니다.
+conn2 cannot be resolved to a variable
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+20: // DB 연결. conn에 연결 정보 저장
+21: stmt = conn.createStatement(); // 연결 정보(conn)를 가지고 연결 통로(stmt) 생성
+22: } catch (Exception e) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:29:20.549 SEVERE [http-nio-8000-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [19] 행에서 오류가 발생했습니다.
+conn2 cannot be resolved to a variable
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+20: // DB 연결. conn에 연결 정보 저장
+21: stmt = conn.createStatement(); // 연결 정보(conn)를 가지고 연결 통로(stmt) 생성
+22: } catch (Exception e) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [14] 행에서 오류가 발생했습니다.
+Duplicate local variable conn
+11: out.println(e.getMessage());
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [15] 행에서 오류가 발생했습니다.
+Duplicate local variable stmt
+12: }
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [16] 행에서 오류가 발생했습니다.
+Duplicate local variable rs
+13: 
+14: Connection conn=null; // DB 연결 정보를 담을 conn 선언
+15: Statement stmt=null; // Statement형 stmt 선언(일종의 DB '연결 통로' 역할을 함)
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [19] 행에서 오류가 발생했습니다.
+conn2 cannot be resolved to a variable
+16: ResultSet rs=null; // ResultSet형 rs 선언. 쿼리문 실행 결과 값을 담을 객체
+17: 
+18: try {
+19: conn2 = DriverManager.getConnection(url, db_user, db_passwd);
+20: // DB 연결. conn에 연결 정보 저장
+21: stmt = conn.createStatement(); // 연결 정보(conn)를 가지고 연결 통로(stmt) 생성
+22: } catch (Exception e) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:42:26.632 SEVERE [http-nio-8000-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:42:30.797 SEVERE [http-nio-8000-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:43:13.577 SEVERE [http-nio-8000-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/action/conn_db2.jsp]의 [3] 행에서 오류가 발생했습니다.
+Duplicate local variable drivers
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [4] 행에서 오류가 발생했습니다.
+Duplicate local variable url
+1: <%
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [5] 행에서 오류가 발생했습니다.
+Duplicate local variable db_user
+2: 
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+
+
+JSP 파일 [/action/conn_db2.jsp]의 [6] 행에서 오류가 발생했습니다.
+Duplicate local variable db_passwd
+3: String drivers="oracle.jdbc.driver.OracleDriver";
+4: String url="jdbc:oracle:thin:@localhost:1521:xe";
+5: String db_user="jsp";
+6: String db_passwd="root";
+7: 
+8: try {
+9: Class.forName(drivers); // 드라이버를 찾습니다.
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:44:34.324 SEVERE [http-nio-8000-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs3 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs3.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:300)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:44:34.890 SEVERE [http-nio-8000-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs3 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs3.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:300)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:44:35.419 SEVERE [http-nio-8000-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs3 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs3.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:300)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:46:05.568 SEVERE [http-nio-8000-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs3 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs3.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:300)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:46:06.313 SEVERE [http-nio-8000-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [10]에서 [/board.jsp]을(를) 처리하는 중 예외 발생
+
+7:         <th>작성자</th>
+8:         <th>작성시간</th>
+9:         <%
+10:         ResultSet rs3 = stmt.executeQuery("select * from bbs");
+11:     
+12:    
+13:     while (rs3.next()) {
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.board_jsp._jspService(board_jsp.java:300)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+28-Mar-2023 14:53:36.196 SEVERE [http-nio-8000-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [16]에서 [/show.jsp]을(를) 처리하는 중 예외 발생
+
+13: 
+14: 
+15: <% 
+16: ResultSet rs1 = stmt.executeQuery("select * from bbs where board_number=" + num);
+17: if(rs1.next()){
+18: out.println("제목 : "+rs1.getString("subject") + "<br>");
+19: out.println("작성자 : "+rs1.getString("name"));
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLRecoverableException: 명령문 종료
+		at oracle.jdbc.driver.OracleClosedStatement.executeQuery(OracleClosedStatement.java:3902)
+		at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:392)
+		at org.apache.jsp.show_jsp._jspService(show_jsp.java:284)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
