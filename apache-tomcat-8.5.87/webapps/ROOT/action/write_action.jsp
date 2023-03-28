@@ -44,7 +44,7 @@ try {
 <script language=javascript>
 	self.window.alert("전송완료");
 	
-	location.href="list_test2.jsp";
+	location.href="../board.jsp";
 </script>
 </head>
 <body>

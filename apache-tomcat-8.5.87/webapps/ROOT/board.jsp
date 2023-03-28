@@ -1,15 +1,6 @@
-<%@ page language="java" import="java.sql.*" contentType="text/html;charset=utf-8" %>
-<%@ include file="conn_db.jsp" %>
+<%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ include file="action/navbar.jsp" %>
 
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     <table border="1">
         <th>게시글 번호</th>
         <th>제목</th>

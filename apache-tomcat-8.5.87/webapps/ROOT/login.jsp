@@ -1,7 +1,5 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>JSP 게시판 프로젝트 - 로그인</title>
+<%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ include file="action/navbar.jsp" %>
 
         <script language='javascript'>
 
@@ -18,14 +16,13 @@
                     return
 
                 }else {
-                    document.myForm.action = 'login.jsp';
+                    document.myForm.action = 'action/login_action.jsp';
                     document.myForm.submit();
                 }
 
             }
 
         </script>
-    </head>
 
     <form name = 'myForm' method = 'post' >
         로그인<br>

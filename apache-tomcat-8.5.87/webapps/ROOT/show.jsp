@@ -1,6 +1,5 @@
-
-<%@ page language="java" import="java.sql.*" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ include file="conn_db.jsp" %>
+<%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ include file="action/navbar.jsp" %>
 
 <%
 String num=request.getParameter("num");
@@ -29,7 +28,7 @@ rs1.close();
 stmt.close();
 conn.close();
 %>
-<a href="list_test2.jsp">목록보기</a>
+<a href="board.jsp">목록보기</a>
 </head>
 <body>
 </body>

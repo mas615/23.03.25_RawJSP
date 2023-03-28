@@ -1,7 +1,5 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>JSP 게시판 프로젝트 - 쓰기</title>
+<%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ include file="action/navbar.jsp" %>
 
         <script language='javascript'>
 
@@ -28,7 +26,7 @@
                     return
 
                 }else {
-                    document.myForm.action = 'write_ok.jsp';
+                    document.myForm.action = 'action/write_action.jsp';
                     document.myForm.submit();
                 }
 

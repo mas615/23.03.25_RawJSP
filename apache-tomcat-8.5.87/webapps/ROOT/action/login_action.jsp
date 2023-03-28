@@ -17,8 +17,7 @@ try {
         out.println(rs1.getString("name")+"<br>");
         out.println("세션 : "+session.getAttribute("userID"));
         session.setAttribute("userID",rs1.getString("customer_number"));
-        
-        out.println("<p>로그인 성공</p>");
+        response.sendRedirect("../index.jsp");
     } else {
         out.println(query);
         out.println(name);

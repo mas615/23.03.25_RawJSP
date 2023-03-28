@@ -14,8 +14,10 @@ String query = "INSERT INTO customer (name, password, email) VALUES ('" + name +
 try {
     stmt.executeUpdate(query);
     out.println("<p>회원가입이 완료되었습니다.</p>");
+    out.println("<a href = '../login.jsp'>로그인 하러가기</a>");
 } catch (SQLException e) {
     out.println("<p>회원가입에 실패했습니다.</p>");
+    out.println("<a href = '../join.jsp'>다시 회원가입</a>");
     e.printStackTrace();
 }
 
