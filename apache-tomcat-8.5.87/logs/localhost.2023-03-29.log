@@ -5412,3 +5412,2204 @@ Stacktrace:]을(를) 발생시켰습니다.
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:41:07.499 SEVERE [http-nio-8000-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+script cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method alert(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+script cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+script cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method alert(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+script cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:41:37.060 SEVERE [http-nio-8000-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+print cannot be resolved or is not a field
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "(", . expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+script cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+print cannot be resolved or is not a field
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "(", . expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+script cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:41:41.341 SEVERE [http-nio-8000-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+print cannot be resolved or is not a field
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "(", . expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+script cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+print cannot be resolved or is not a field
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "(", . expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+script cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%= <script>alert("gdgd");</script> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:42:27.231 SEVERE [http-nio-8000-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+p cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+ㅎㅇㅎㅇ cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+p cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+p cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+ㅎㅇㅎㅇ cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "/", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+p cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% <p>ㅎㅇㅎㅇ</p> %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:49:10.407 SEVERE [http-nio-8000-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The type of the expression must be an array type but it resolved to String
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on token "gdgd", [ expected
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [6] 행에서 오류가 발생했습니다.
+div cannot be resolved to a variable
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+
+
+JSP 파일 [/show.jsp]의 [6] 행에서 오류가 발생했습니다.
+Syntax error on token "class", ] expected
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+
+
+JSP 파일 [/show.jsp]의 [6] 행에서 오류가 발생했습니다.
+Syntax error on tokens, Expression expected instead
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+
+
+JSP 파일 [/show.jsp]의 [6] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+
+
+JSP 파일 [/show.jsp]의 [7] 행에서 오류가 발생했습니다.
+div cannot be resolved to a variable
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [7] 행에서 오류가 발생했습니다.
+Syntax error on tokens, Expression expected instead
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [7] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [9] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+
+
+JSP 파일 [/show.jsp]의 [9] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+
+
+JSP 파일 [/show.jsp]의 [10] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+
+
+JSP 파일 [/show.jsp]의 [11] 행에서 오류가 발생했습니다.
+Syntax error on token "<", delete this token
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The type of the expression must be an array type but it resolved to String
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on token "gdgd", [ expected
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [6] 행에서 오류가 발생했습니다.
+div cannot be resolved to a variable
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+
+
+JSP 파일 [/show.jsp]의 [6] 행에서 오류가 발생했습니다.
+Syntax error on token "class", ] expected
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+
+
+JSP 파일 [/show.jsp]의 [6] 행에서 오류가 발생했습니다.
+Syntax error on tokens, Expression expected instead
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+
+
+JSP 파일 [/show.jsp]의 [6] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+
+
+JSP 파일 [/show.jsp]의 [7] 행에서 오류가 발생했습니다.
+div cannot be resolved to a variable
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [7] 행에서 오류가 발생했습니다.
+Syntax error on tokens, Expression expected instead
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [7] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [9] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+
+
+JSP 파일 [/show.jsp]의 [9] 행에서 오류가 발생했습니다.
+Syntax error on token(s), misplaced construct(s)
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+
+
+JSP 파일 [/show.jsp]의 [10] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+7: 	<div class="row">
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+
+
+JSP 파일 [/show.jsp]의 [11] 행에서 오류가 발생했습니다.
+Syntax error on token "<", delete this token
+8: 	  <div class="col">
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "<", invalid Expression
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:49:30.273 SEVERE [http-nio-8000-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>" %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type String
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>" %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>" %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type String
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>" %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:49:35.938 SEVERE [http-nio-8000-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>" %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type String
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>" %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>" %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type String
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>" %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:49:49.552 SEVERE [http-nio-8000-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"; %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on token "gdgd", invalid AssignmentOperator
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"; %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"; %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on token "gdgd", invalid AssignmentOperator
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"; %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:49:54.310 SEVERE [http-nio-8000-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"; %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on token "gdgd", invalid AssignmentOperator
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"; %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+The left-hand side of an assignment must be a variable
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"; %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error on token "gdgd", invalid AssignmentOperator
+2: <%@ include file="action/navbar.jsp" %>
+3: <%@ include file="action/conn_db2.jsp" %>
+4: <% String num=request.getParameter("num"); %>
+5: <% String jscode = "<script>alert("gdgd");</script>"; %>
+6: <div class="container text-center">
+7: 	<div class="row">
+8: 	  <div class="col">
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:50:14.407 SEVERE [http-nio-8000-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:50:19.049 SEVERE [http-nio-8000-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+jscode cannot be resolved to a type
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Duplicate local variable out
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ; expected
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+The method write(String) is undefined for the type show_jsp
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<% jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:52:11.461 SEVERE [http-nio-8000-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "jscode", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%! jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "jscode", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%! jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+29-Mar-2023 22:52:18.118 SEVERE [http-nio-8000-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "jscode", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%! jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [12] 행에서 오류가 발생했습니다.
+Syntax error on token "jscode", delete this token
+9: 	  </div>
+10: 	  <div class="col">
+11: 		<br><br>
+12: 		<%! jscode %>
+13: 		<table class="table table-striped-columns">
+14: <% 
+15: rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
