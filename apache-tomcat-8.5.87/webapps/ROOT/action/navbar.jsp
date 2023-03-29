@@ -27,7 +27,7 @@ if(session.getAttribute("userID") != null){
         if(rs1.next()){
             String A = "<li class=\"nav-item dropdown\">\n" +
                 "    <a class=\"nav-link active dropdown-toggle\" aria-current=\"page\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">";
-            String B = "</a>\n" +
+            String B = "님 환영합니다</a>\n" +
             "<ul class=\"dropdown-menu\">\n" +
             "<li><a class=\"dropdown-item\" href=\"action/logout_action.jsp\">로그아웃</a></li>\n" +
             "<li><a class=\"dropdown-item\" href=\"#\">내정보</a></li>\n" +
@@ -64,8 +64,8 @@ out.println(C);
                   XSS
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">게시판</a></li>
-                  <li><a class="dropdown-item" href="write.jsp">글쓰기</a></li>
+                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
                 </ul>
               </li>
 
@@ -74,9 +74,8 @@ out.println(C);
                   SQL injection
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
                 </ul>
               </li>
 
@@ -85,9 +84,8 @@ out.println(C);
                   파일 업/다운로드
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
                 </ul>
               </li>
 
@@ -96,9 +94,8 @@ out.println(C);
                   세션
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
                 </ul>
               </li>
         

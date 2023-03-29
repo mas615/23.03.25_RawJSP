@@ -34,18 +34,34 @@
 
         </script>
     </head>
-
-    <form name = 'myForm' method = 'post' >
-        이름 : <% out.println(session.getAttribute("userName")); %> 
-        <input type="hidden" name="name" value="<% out.println(session.getAttribute("userName")); %> "> <br>
-        <input type="hidden" name="password" value="<% out.println(session.getAttribute("userID")); %> "> <br>
-        제목 : <input type="text" name="subject" size=50 maxlength = 70> <br>
-        내용 : <textarea name="memo" cols=50 rows = 5 maxlength = 500></textarea> <br>
-
-        <br>
-        <input type='button' value='write' onclick='javascript:check_submit();'>
-
-    </form>
+    
+    <br><br><br>
+    <div class="d-flex justify-content-center">
+        <div class="col-md-4">
+          <form name="myForm" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="title">제목</label>
+              <input type="text" class="form-control" name="subject" id="title" placeholder="제목을 입력하세요">
+            </div>
+            <input type="hidden" name="name" value="<% out.println(session.getAttribute("userName")); %> ">
+            <input type="hidden" name="password" value="<% out.println(session.getAttribute("userID")); %> ">
+            <div class="form-group">
+              <label for="content"> 내용 </label>
+              <textarea class="form-control" id="content" name="memo" placeholder="내용을 입력하세요"></textarea>
+            </div>
+            <label for="content"> 파일 </label>
+            <br>
+            <div class="input-group">
+                <input type="file" name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            </div>
+          </form>
+          <br>
+          <a href="board.jsp" role="button" class="btn btn-secondary">취소</a>
+          <button type="button" class="btn btn-primary" id="btn-save" onclick='javascript:check_submit();'>등록</button>
+        </div>
+      </div>
+      
+    
 
 </body>
 </html>

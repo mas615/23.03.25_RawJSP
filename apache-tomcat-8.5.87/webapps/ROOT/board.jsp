@@ -36,26 +36,26 @@
         
       <%
       if(search != null){
-        ResultSet rs3 = stmt2.executeQuery("select * from bbs where subject LIKE'%"+search+"%'");
+        ResultSet rs3 = stmt2.executeQuery("select * from bbs1 where subject LIKE'%"+search+"%' order by writetime DESC");
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");
           out.println("<td>" + "<a href='show.jsp?num=" + rs3.getInt("board_number") + "'>" + rs3.getString("subject") + "</a>" + "</td>");
           out.println("<td>" + rs3.getString("name") + "</td>");
-          out.println("<td>" + rs3.getString("wrietime") + "</td>");
+          out.println("<td>" + rs3.getString("writetime") + "</td>");
           out.println("</tr>");
       }
       rs3.close();
       stmt2.close();
       conn2.close();
       }else{
-        ResultSet rs3 = stmt2.executeQuery("select * from bbs");
+        ResultSet rs3 = stmt2.executeQuery("select * from bbs1 order by writetime DESC");
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");
           out.println("<td>" + "<a href='show.jsp?num=" + rs3.getInt("board_number") + "'>" + rs3.getString("subject") + "</a>" + "</td>");
           out.println("<td>" + rs3.getString("name") + "</td>");
-          out.println("<td>" + rs3.getString("wrietime") + "</td>");
+          out.println("<td>" + rs3.getString("writetime") + "</td>");
           out.println("</tr>");
       }
       rs3.close();

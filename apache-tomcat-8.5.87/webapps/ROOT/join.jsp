@@ -35,26 +35,35 @@
         </script>
    
 
-   
+      <div class="modal-dialog" role="document" style="width: 40%;">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+            <h1 class="fw-bold mb-0 fs-2">회원가입</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="javascript:location.href='index.jsp'"></button>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form form name = 'myForm' method = 'post' >
+              <div class="form-floating mb-3">
+                <input type="text" name="name" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">아이디</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" name="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">비밀번호</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" name="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">이메일</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" name="address" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">주소</label>
+              </div>
 
-    <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            
-          </div>
-          <div class="col">
-                            <form name = 'myForm' method = 'post' >
-                                <br><br><br><br>
-                                <p>회원가입</p>
-                                <p><input type="text" name="name" size=20 maxlength = 20 placeholder="아이디"></p>
-                                <p><input type="password" name="password" size=20 maxlength = 20 placeholder="비밀번호"> <br></p>
-                                <p><input type="text" name="email" size=50 maxlength = 70 placeholder="이메일"><br></p>
-                                <p><input type="text" name="address" size=50 maxlength = 70 placeholder="주소"> <br></p>
-                                <input type='button' class="btn btn-primary" value='회원가입' onclick='javascript:check_submit();'>
-                            </form>
-          </div>
-          <div class="col">
-            
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" onclick='javascript:check_submit();'>Sign up</button>
+            </form>
           </div>
         </div>
       </div>

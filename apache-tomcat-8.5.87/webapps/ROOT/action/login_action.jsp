@@ -20,14 +20,12 @@ try {
         session.setAttribute("userName",rs1.getString("name"));
         response.sendRedirect("../index.jsp");
     } else {
-        out.println(query);
-        out.println(name);
-        out.println(password);
-        out.println("<p>로그인 실패</p>");
+         out.println("<script language=javascript>self.window.alert('아이디/비밀번호를 확인해주세요'); location.href='../login.jsp';</script>");
+         
     }
     rs1.close();
 } catch (SQLException e) {
-    out.println("<p>로그인 실패</p>");
+    out.println("<script language=javascript>self.window.alert('로그인 실패'); location.href='../login.jsp';</script>");
     e.printStackTrace();
 }
 
