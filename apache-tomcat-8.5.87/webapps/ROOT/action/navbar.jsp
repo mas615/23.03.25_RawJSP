@@ -30,7 +30,7 @@ if(session.getAttribute("userID") != null){
             String B = "님 환영합니다</a>\n" +
             "<ul class=\"dropdown-menu\">\n" +
             "<li><a class=\"dropdown-item\" href=\"action/logout_action.jsp\">로그아웃</a></li>\n" +
-            "<li><a class=\"dropdown-item\" href=\"#\">내정보</a></li>\n" +
+            "<li><a class=\"dropdown-item\" href=\"mypage.jsp\">내정보</a></li>\n" +
             "</ul>\n" +
             "</li>";
 
@@ -64,8 +64,9 @@ out.println(C);
                   XSS
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="xss2_board.jsp">LV2</a></li>
+                  <li><a class="dropdown-item" href="../board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="xss2/board.jsp">LV2</a></li>
+                  <li><a class="dropdown-item" href="xss3/xss2_board.jsp">LV3</a></li>
                 </ul>
               </li>
 

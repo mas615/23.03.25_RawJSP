@@ -1,0 +1,1 @@
+update customer set password='123' where name='12345';

