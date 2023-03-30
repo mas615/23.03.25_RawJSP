@@ -17,6 +17,7 @@ String s_password=multi.getParameter("password");
 String s_subject= multi.getParameter("subject");
 s_subject = s_subject.replace("<", "&lt;").replace(">", "&gt;");
 String s_memo= multi.getParameter("memo");
+s_memo = s_memo.replace("<", "&lt;").replace(">", "&gt;");
 String fileName = multi.getFilesystemName("file");
 String original = multi.getOriginalFileName("file");
 String s_ip = "123";

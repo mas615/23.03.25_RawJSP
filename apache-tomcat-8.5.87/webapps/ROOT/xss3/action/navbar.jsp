@@ -60,45 +60,10 @@ out.println(C);
               
               
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="list_test2.jsp" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  XSS
+                <a class="nav-link" aria-expanded="false">
+                  XSS LV3
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="xss2_board.jsp">LV2</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  SQL injection
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  파일 업/다운로드
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  세션
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
-                </ul>
-              </li>
-        
+              </li>        
             
             </ul>
           </div>

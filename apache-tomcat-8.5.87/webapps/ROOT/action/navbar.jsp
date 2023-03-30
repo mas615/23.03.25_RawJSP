@@ -66,7 +66,7 @@ out.println(C);
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="../board.jsp">Lv1</a></li>
                   <li><a class="dropdown-item" href="xss2/board.jsp">LV2</a></li>
-                  <li><a class="dropdown-item" href="xss3/xss2_board.jsp">LV3</a></li>
+                  <li><a class="dropdown-item" href="xss3/board.jsp">LV3</a></li>
                 </ul>
               </li>
 
