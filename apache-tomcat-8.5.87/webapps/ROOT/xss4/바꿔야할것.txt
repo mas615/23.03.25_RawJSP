@@ -1,0 +1,2 @@
+action/navbar.jsp = 위에 나오는 현재 난이도 변경
+action/wtire_action.jsp = XSS의 경우 받는 파라미터를 replace시켜서 <script> 치환시키기

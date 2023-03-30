@@ -64,9 +64,11 @@ out.println(C);
                   XSS
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="board.jsp">Basic</a></li>
+                  <li><a class="dropdown-item" href="xss1/board.jsp">Lv1</a></li>
                   <li><a class="dropdown-item" href="xss2/board.jsp">LV2</a></li>
                   <li><a class="dropdown-item" href="xss3/board.jsp">LV3</a></li>
+                  <li><a class="dropdown-item" href="xss4/board.jsp">LV4</a></li>
                 </ul>
               </li>
 
