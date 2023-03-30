@@ -1,0 +1,1 @@
+insert into customer (name,password,email,address) select '1234ma','123','123123','1234' from dual where not exists (select name from customer where name ='1234ma');
