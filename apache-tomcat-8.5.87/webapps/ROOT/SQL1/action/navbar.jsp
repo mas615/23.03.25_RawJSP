@@ -7,14 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project_Ma</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.jsp">Project_Ma</a>
+          <a class="navbar-brand" href="../index.jsp">Project_Ma</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,7 +50,6 @@ if(session.getAttribute("userID") != null){
         + " <a class=\"nav-link active dropdown-toggle\" aria-current=\"page\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">로그인</a>\n"
         + " <ul class=\"dropdown-menu\">\n"
         + " <li><a class=\"dropdown-item\" href=\"login.jsp\">로그인</a></li>\n"
-        + " <li><a class=\"dropdown-item\" href=\"login_2.jsp\">로그인 LV2</a></li>\n"
         + " <li><a class=\"dropdown-item\" href=\"join.jsp\">회원가입</a></li>\n"
         + " </ul>\n"
         + "</li>";
@@ -61,48 +60,10 @@ out.println(C);
               
               
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="list_test2.jsp" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  XSS
+                <a class="nav-link" aria-expanded="false">
+                  XSS LV2
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Basic</a></li>
-                  <li><a class="dropdown-item" href="xss1/board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="xss2/board.jsp">LV2</a></li>
-                  <li><a class="dropdown-item" href="xss3/board.jsp">LV3</a></li>
-                  <li><a class="dropdown-item" href="xss4/board.jsp">LV4</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  SQL injection
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  파일 업/다운로드
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  세션
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
-                </ul>
-              </li>
-        
+              </li>        
             
             </ul>
           </div>

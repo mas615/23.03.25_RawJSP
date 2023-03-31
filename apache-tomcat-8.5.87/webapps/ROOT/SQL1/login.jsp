@@ -16,7 +16,7 @@
                     return
 
                 }else {
-                    document.myForm.action = 'action/login_action_2.jsp';
+                    document.myForm.action = 'action/login_action.jsp';
                     document.myForm.submit();
                 }
 
@@ -44,7 +44,7 @@
               <input type="password" name="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
               <label for="floatingPassword">비밀번호</label>
             </div>
-            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" onclick='javascript:check_submit();'>Sign in</button>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" onclick='javascript:check_submit();'>Sign up</button>
           </form>
         </div>
       </div>

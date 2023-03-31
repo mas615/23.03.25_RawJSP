@@ -4,9 +4,6 @@
         <script language='javascript'>
 
             function check_submit(){
-              const subject = document.querySelector("input[name='subject']");
-              const memo = document.querySelector("textarea[name='memo']");
-              const regex = /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9| |]+$/;
 
                 if (document.myForm.name.value == "") {
                     alert('이름을 입력하세요');
@@ -28,20 +25,13 @@
                     document.myForm.memo.focus();
                     return
 
-                }else if (!regex.test(subject.value)){
-                    alert('특수 문자는 입력할 수 없습니다.');
-                    return
-
-                }else if (!regex.test(memo.value)){
-                    alert('특수 문자는 입력할 수 없습니다.');
-                    return
-
-                }else{
+                }else {
                     document.myForm.action = 'action/write_action.jsp';
                     document.myForm.submit();
                 }
 
             }
+
         </script>
     </head>
     

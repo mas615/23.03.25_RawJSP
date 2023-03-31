@@ -2,7 +2,6 @@
 <%@ include file="conn_db.jsp" %>
 <%
 // 1. 사용자로부터 입력 받은 데이터 가져오기
-request.setCharacterEncoding("utf-8");
 String name = request.getParameter("name");
 String password = request.getParameter("password");
 stmt = conn.createStatement();
