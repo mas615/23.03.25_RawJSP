@@ -6,7 +6,7 @@
 
 
 <%
-String saveFolder = application.getRealPath("/data1") ;
+String saveFolder = getServletContext().getRealPath("/") + "data1";
     String encType = "UTF-8";
     int maxSize = 5 * 1024 * 1024;
 MultipartRequest multi = null;
