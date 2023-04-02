@@ -30,12 +30,16 @@
               </div>
               <div class="col">
                   <form name="myForm">
-                      <input type="text" class="form-control" name="search" placeholder="제목검색" aria-label="Recipient's username" aria-describedby="button-addon2">                         
+                    <% if(search != null){ %>
+                    <input type="text" class="form-control" name="search" value="<%= search %>" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <% }else{ %>
+                    <input type="text" class="form-control" name="search" placeholder="제목검색" aria-label="Recipient's username" aria-describedby="button-addon2">  
+                    <% } %>                         
                       </div>
                       <div class="col">
-                      <div class="input-group mb-3">                    
-                      <button class="btn btn-primary" onclick='javascript:check_submit();'>검색</button>
+                      <div class="input-group mb-3">               
                   </form>
+                  <button class="btn btn-primary" onclick='javascript:check_submit();'>검색</button>
                         </div>               
               </div>
     </div>

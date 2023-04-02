@@ -1,10 +1,25 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="conn_db.jsp" %>
+<%@ page import="java.security.MessageDigest" %>
 <%
 // 1. 사용자로부터 입력 받은 데이터 가져오기
 request.setCharacterEncoding("utf-8");
 String name = request.getParameter("name");
 String password = request.getParameter("password");
+
+    String input = password;
+    MessageDigest md = MessageDigest.getInstance("SHA-256");
+    byte[] hash = md.digest(input.getBytes("UTF-8"));
+    StringBuffer hexString = new StringBuffer();
+
+    for (int i = 0; i < hash.length; i++) {
+        String hex = Integer.toHexString(0xff & hash[i]);
+        if (hex.length() == 1) hexString.append('0');
+        hexString.append(hex);
+    }
+
+    password = hexString.toString();
+
 stmt = conn.createStatement();
 
 

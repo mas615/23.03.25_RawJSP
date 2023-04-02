@@ -78,8 +78,10 @@ out.println(C);
                   SQL injection
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
+                  <li><a class="dropdown-item" href="SQL1/board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="SQL2/board.jsp">LV2</a></li>
+                  <li><a class="dropdown-item" href="SQL3/board.jsp">Lv3</a></li>
+                  <li><a class="dropdown-item" href="SQL4/board.jsp">LV4</a></li>
                 </ul>
               </li>
 

@@ -1,0 +1,5 @@
+dd' and (select count(table_name) from user_tables)>1 -- 됨
+dd' and (select count(table_name) from user_tables)>100 -- 안됨 (이렇게 계속 테이블 갯수 확인
+dd' and (select count(table_name) from user_tables)>7 -- 됨
+dd' and (select count(table_name) from user_tables)>8 -- 안됨
+dd' and (select count(table_name) from user_tables)=8 --됨 ( 테이블 갯수가 8개임을 확인)
