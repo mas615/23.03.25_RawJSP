@@ -1,8 +1,10 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="action/navbar.jsp" %>
 <%@ include file="action/conn_db2.jsp" %>
-<% String search=request.getParameter("search"); %>
-
+<% 
+String search=request.getParameter("search");
+String order=request.getParameter("order"); 
+%>
 <script language='javascript'>
   function check_submit(){
     const search = document.querySelector("input[name='search']");
@@ -46,14 +48,38 @@
 </div>
 
     <table class="table table-striped table-hover">
-        <th>게시글 번호</th>
-        <th>제목</th>
-        <th>작성자</th>
-        <th>작성시간</th>
-        
-      <%
+      <% if(search != null){ %>
+        <th>게시글 번호<a href="board.jsp?order=to_number(board_number)&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=to_number(board_number) desc">△</a></th>
+        <th>제목<a href="board.jsp?order=subject&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=subject desc">△</a></th>
+        <th>작성자<a href="board.jsp?order=name&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=name desc">△</a></th>
+        <th>작성시간<a href="board.jsp?order=writetime&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=writetime desc">△</a></th>
+        <% }else{ %>
+        <th>게시글 번호
+          <a href="board.jsp?order=to_number(board_number)">▼</a>
+          <a href="board.jsp?order=to_number(board_number) desc">△</a>
+        </th>
+        <th>제목
+          <a href="board.jsp?order=subject">▼</a>
+          <a href="board.jsp?order=subject desc">△</a>
+        </th>
+        <th>작성자
+          <a href="board.jsp?order=name">▼</a>
+          <a href="board.jsp?order=name desc">△</a>
+        </th>
+        <th>작성시간
+          <a href="board.jsp?order=writetime">▼</a>
+          <a href="board.jsp?order=writetime desc">△</a>
+        </th>        
+        <% };
+      String orderby = null;
+      if(order != null){
+        orderby = " order by " + order;
+      }else{
+        orderby = " order by writetime DESC";
+      }
+
       if(search != null){
-        ResultSet rs3 = stmt2.executeQuery("select * from bbs1 where subject LIKE'%"+search+"%' order by writetime DESC");
+        ResultSet rs3 = stmt2.executeQuery("select * from bbs1 where subject LIKE'%"+search+"%'"+orderby);
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");
@@ -66,7 +92,7 @@
       stmt2.close();
       conn2.close();
       }else{
-        ResultSet rs3 = stmt2.executeQuery("select * from bbs1 order by writetime DESC");
+        ResultSet rs3 = stmt2.executeQuery("select * from bbs1"+orderby);
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");

@@ -33,17 +33,17 @@ String order=request.getParameter("order");
               </div>
               <div class="col">
                   <form name="myForm">
-                    <% if(search != null){ %>
-                    <input type="text" class="form-control" name="search" value="<%= search %>" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <% }else{ %>
-                    <input type="text" class="form-control" name="search" placeholder="제목검색" aria-label="Recipient's username" aria-describedby="button-addon2">  
-                    <% } %>
-                    <% if(order != null){ %>
-                    <input type="hidden" value="<%= order %>" name="order">
-                    <% } %>                      
-                      </div>
-                      <div class="col">
-                      <div class="input-group mb-3">               
+                          <% if(search != null){ %>
+                          <input type="text" class="form-control" name="search" value="<%= search %>" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <% }else{ %>
+                          <input type="text" class="form-control" name="search" placeholder="제목검색" aria-label="Recipient's username" aria-describedby="button-addon2">  
+                          <% } %>
+                          <% if(order != null){ %>
+                          <input type="hidden" value="<%= order %>" name="order">
+                          <% } %>                      
+              </div>
+                          <div class="col">
+                          <div class="input-group mb-3">               
                   </form>
                   <button class="btn btn-primary" onclick='javascript:check_submit();'>검색</button>
                         </div>               
@@ -52,16 +52,32 @@ String order=request.getParameter("order");
 </div>
 
     <table class="table table-striped table-hover">
-        <th>게시글 번호</th>
-        <th>제목</th>
-        <th>작성자</th>
-        <th>작성시간</th>
-        
-      <%
+      <% if(search != null){ %>
+        <th>게시글 번호<a href="board.jsp?order=to_number(board_number)&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=to_number(board_number) desc">△</a></th>
+        <th>제목<a href="board.jsp?order=subject&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=subject desc">△</a></th>
+        <th>작성자<a href="board.jsp?order=name&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=name desc">△</a></th>
+        <th>작성시간<a href="board.jsp?order=writetime&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=writetime desc">△</a></th>
+        <% }else{ %>
+        <th>게시글 번호
+          <a href="board.jsp?order=to_number(board_number)">▼</a>
+          <a href="board.jsp?order=to_number(board_number) desc">△</a>
+        </th>
+        <th>제목
+          <a href="board.jsp?order=subject">▼</a>
+          <a href="board.jsp?order=subject desc">△</a>
+        </th>
+        <th>작성자
+          <a href="board.jsp?order=name">▼</a>
+          <a href="board.jsp?order=name desc">△</a>
+        </th>
+        <th>작성시간
+          <a href="board.jsp?order=writetime">▼</a>
+          <a href="board.jsp?order=writetime desc">△</a>
+        </th>        
+        <% };
       String orderby = null;
       if(order != null){
         orderby = " order by " + order;
-
       }else{
         orderby = " order by writetime DESC";
       }
