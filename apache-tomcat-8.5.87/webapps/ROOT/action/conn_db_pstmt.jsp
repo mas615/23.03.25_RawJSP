@@ -5,6 +5,6 @@
 <%@page import="java.util.*,java.io.*"%>
 <% 
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "jsp", "root");
+Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.15.130:1521:xe", "jsp", "root");
 %>
 

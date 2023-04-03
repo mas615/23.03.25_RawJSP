@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ include file="conn_db.jsp" %>
+<%@ include file="../../conn_db.jsp" %>
 <%
 // 1. 사용자로부터 입력 받은 데이터 가져오기
 String majun = request.getParameter("majun");

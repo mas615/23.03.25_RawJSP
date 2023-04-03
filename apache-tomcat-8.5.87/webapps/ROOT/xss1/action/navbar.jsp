@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
-<%@ include file="conn_db.jsp" %>
+<%@ include file="../../action/conn_db.jsp" %>
 
 <!doctype html>
 <html lang="ko">
