@@ -73,7 +73,8 @@ if (search != null && (search.toLowerCase().contains("union") ||
           orderby = " order by writetime DESC";
         }
   
-        if(search != null){
+        if(search != null){    
+            
           ResultSet rs3 = stmt2.executeQuery("select * from bbs1 where subject LIKE'%"+search+"%'"+orderby);
           while (rs3.next()) {
             out.println("<tr>");

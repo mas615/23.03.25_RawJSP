@@ -1,7 +1,8 @@
+<%@ include file="globalip.jsp" %>
 <%
 
 String drivers="oracle.jdbc.driver.OracleDriver";
-String url="jdbc:oracle:thin:@192.168.15.130:1521:xe";
+String url="jdbc:oracle:thin:@"+globalip+":1521:xe";
 String db_user="jsp";
 String db_passwd="root";
 

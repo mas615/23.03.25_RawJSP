@@ -1,10 +1,16 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="action/navbar.jsp" %>
 <%@ include file="../action/conn_db2.jsp" %>
-<%@ include file="../action/conn_db_pstmt2.jsp" %>
 <% 
 String search=request.getParameter("search");
 String order=request.getParameter("order");
+if (search != null && (search.toLowerCase().contains("union") || 
+                        search.toUpperCase().contains("UTL_INADDR.GET_HOST_NAME") || 
+                        search.toUpperCase().contains("UTL_INADDR.GET_HOST_ADDRESS") || 
+                        search.toUpperCase().contains("ORDSYS.ORD_DICOM.GETMAPPINGXPATH") || 
+                        search.toUpperCase().contains("CTXSYS.DRITHSX.SN"))) {
+    out.println("<script>alert('LV3 SQL인젝션을 사용할 수 없습니다.'); location.href='board.jsp';</script>");
+} else {
 %>
 
 <br>
@@ -59,7 +65,7 @@ String order=request.getParameter("order");
           <a href="board.jsp?order=writetime">▼</a>
           <a href="board.jsp?order=writetime desc">△</a>
         </th>        
-        <%
+        <% };
         String orderby = null;
         if(order != null){
           orderby = " order by " + order;
@@ -68,26 +74,32 @@ String order=request.getParameter("order");
         }
   
         if(search != null){
-          try {	
-            String str_sql = "select * from bbs1 where subject LIKE ?";
-            PreparedStatement pstmt = connpre.prepareStatement(str_sql);
-            pstmt.setNString(1,"%"+search+"%");
-            ResultSet rspre = pstmt.executeQuery();
-            while (rspre.next()) {
-              out.println("<tr>");
-              out.println("<td>" + rspre.getInt("board_number") + "</td>");
-              out.println("<td>" + "<a href='show.jsp?num=" + rspre.getInt("board_number") + "'>" + rspre.getString("subject") + "</a>" + "</td>");
-              out.println("<td>" + rspre.getString("name") + "</td>");
-              out.println("<td>" + rspre.getString("writetime") + "</td>");
-              out.println("</tr>");
-          }
-            rspre.close();
-            pstmt.close(); 
-            conn.close();
-          
-          } catch (Exception e) {
-            out.println(e);
-          } ;  
+          try {
+                          Connection connpre=null; 
+                          Statement stmtpre=null; 
+                          ResultSet rspre=null;
+
+                          connpre = DriverManager.getConnection(url, db_user, db_passwd);
+                          stmtpre = connpre.createStatement();
+                          String str_sql = "select * from bbs1 where subject LIKE ?";
+                          PreparedStatement pretmt = connpre.prepareStatement(str_sql);
+                          pretmt.setNString(1,"%"+search+"%");
+                          rspre = pretmt.executeQuery();
+                          while (rspre.next()) {
+                            out.println("<tr>");
+                            out.println("<td>" + rspre.getInt("board_number") + "</td>");
+                            out.println("<td>" + "<a href='show.jsp?num=" + rspre.getInt("board_number") + "'>" + rspre.getString("subject") + "</a>" + "</td>");
+                            out.println("<td>" + rspre.getString("name") + "</td>");
+                            out.println("<td>" + rspre.getString("writetime") + "</td>");
+                            out.println("</tr>");
+                          }
+                          rspre.close();
+                          pretmt.close();
+                          connpre.close();
+
+            } catch (Exception e) {
+            e.printStackTrace();
+            }
         }else{
           ResultSet rs3 = stmt2.executeQuery("select * from bbs1"+orderby);
           while (rs3.next()) {
