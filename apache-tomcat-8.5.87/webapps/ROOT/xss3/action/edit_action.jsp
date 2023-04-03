@@ -1,7 +1,7 @@
 
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@page import="java.util.*,java.io.*"%>
-<%@ include file="conn_db_pstmt.jsp" %>
+<%@ include file="../../action/conn_db_pstmt.jsp" %>
 
 <% 
 request.setCharacterEncoding("utf-8");

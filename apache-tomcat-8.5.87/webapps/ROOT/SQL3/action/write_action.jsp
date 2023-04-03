@@ -3,7 +3,7 @@
 <%@page import="com.oreilly.servlet.MultipartRequest" %>
 <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
 <%@page import="java.util.*,java.io.*"%>
-
+<%@ include file="../../action/conn_db_pstmt.jsp" %>
 
 <%
 String saveFolder = getServletContext().getRealPath("/") + "data1";
@@ -24,9 +24,7 @@ out.println(s_subject);
  
 
 try {
-	Class.forName("oracle.jdbc.driver.OracleDriver");
-	Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "jsp", "root");
-
+	
 	String str_sql = "INSERT INTO BBS1 (name,password,email,HOMEPAGE,subject,memo,ip,writetime) VALUES(?,?,?,?,?,?,?,TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";
 	PreparedStatement pstmt = conn.prepareStatement(str_sql);
 	pstmt.setNString(1,s_name);
