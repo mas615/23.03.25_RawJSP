@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
-<%@ include file="action/navbar.jsp" %>
+<%@ include file="../action/navbar2.jsp" %>
 <%@ include file="../action/conn_db2.jsp" %>
 <% 
 String search=request.getParameter("search");
@@ -66,7 +66,7 @@ String order=request.getParameter("order");
         }
   
         if(search != null){
-          ResultSet rs3 = stmt2.executeQuery("select * from bbs1 where subject LIKE'%"+search+"%'"+orderby);
+          ResultSet rs3 = stmt2.executeQuery("select * from XSS1 where subject LIKE'%"+search+"%'"+orderby);
           while (rs3.next()) {
             out.println("<tr>");
             out.println("<td>" + rs3.getInt("board_number") + "</td>");
@@ -79,7 +79,7 @@ String order=request.getParameter("order");
         stmt2.close();
         conn2.close();
         }else{
-          ResultSet rs3 = stmt2.executeQuery("select * from bbs1"+orderby);
+          ResultSet rs3 = stmt2.executeQuery("select * from XSS1"+orderby);
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");

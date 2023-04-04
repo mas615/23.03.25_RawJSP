@@ -13,7 +13,7 @@ int s_board_number= Integer.parseInt(request.getParameter("board_number"));
 
 <%
 try {
-    String str_sql = "UPDATE bbs1 SET subject=?,memo=? where board_number=?";
+    String str_sql = "UPDATE XSS3 SET subject=?,memo=? where board_number=?";
 	PreparedStatement pstmt = conn.prepareStatement(str_sql);
 	pstmt.setNString(1,s_subject);
 	pstmt.setNString(2,s_memo);

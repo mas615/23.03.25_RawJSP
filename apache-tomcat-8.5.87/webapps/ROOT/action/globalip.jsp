@@ -1,3 +1,3 @@
 <%
-String globalip = "192.168.15.132";
+String globalip = "localhost";
 %>

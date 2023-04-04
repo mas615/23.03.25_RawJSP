@@ -1,6 +1,5 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
-<%@ include file="action/navbar.jsp" %>
-
+<%@ include file="../action/navbar2.jsp" %>
         <script language='javascript'>
 
             function check_submit(){

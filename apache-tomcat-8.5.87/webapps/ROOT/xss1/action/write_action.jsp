@@ -24,7 +24,7 @@ String s_ip = "123";
 
 try {
 	
-	String str_sql = "INSERT INTO BBS1 (name,password,email,HOMEPAGE,subject,memo,ip,writetime) VALUES(?,?,?,?,?,?,?,TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";
+	String str_sql = "INSERT INTO XSS1 (name,password,email,HOMEPAGE,subject,memo,ip,writetime) VALUES(?,?,?,?,?,?,?,TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";
 	PreparedStatement pstmt = conn.prepareStatement(str_sql);
 	pstmt.setNString(1,s_name);
 	pstmt.setNString(2,s_password);

@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
-<%@ include file="action/navbar.jsp" %>
+<%@ include file="../action/navbar2.jsp" %>
 <%@ include file="../action/conn_db2.jsp" %>
 <% String num=request.getParameter("num"); %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -13,7 +13,7 @@
 		<br><br>
 		<table class="table table-striped-columns">
 <% 
-rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+rs2 = stmt2.executeQuery("select * from XSS1 where board_number=" + num);
 String filename = null;
 String originfilename = null;
 String writer = null;
