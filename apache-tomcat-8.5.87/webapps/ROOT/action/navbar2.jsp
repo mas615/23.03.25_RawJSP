@@ -29,8 +29,8 @@ if(session.getAttribute("userID") != null){
                 "    <a class=\"nav-link active dropdown-toggle\" aria-current=\"page\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">";
             String B = "님 환영합니다</a>\n" +
             "<ul class=\"dropdown-menu\">\n" +
-            "<li><a class=\"dropdown-item\" href=\"action/logout_action.jsp\">로그아웃</a></li>\n" +
-            "<li><a class=\"dropdown-item\" href=\"mypage.jsp\">내정보</a></li>\n" +
+            "<li><a class=\"dropdown-item\" href=\"../action/logout_action.jsp\">로그아웃</a></li>\n" +
+            "<li><a class=\"dropdown-item\" href=\"../mypage.jsp\">내정보</a></li>\n" +
             "</ul>\n" +
             "</li>";
 
@@ -65,11 +65,11 @@ out.println(C);
                   XSS
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Basic</a></li>
-                  <li><a class="dropdown-item" href="xss1/board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="xss2/board.jsp">LV2</a></li>
-                  <li><a class="dropdown-item" href="xss3/board.jsp">LV3</a></li>
-                  <li><a class="dropdown-item" href="xss4/board.jsp">LV4</a></li>
+                  <li><a class="dropdown-item" href="../board.jsp">Basic</a></li>
+                  <li><a class="dropdown-item" href="../xss1/board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="../xss2/board.jsp">LV2</a></li>
+                  <li><a class="dropdown-item" href="../xss3/board.jsp">LV3</a></li>
+                  <li><a class="dropdown-item" href="../xss4/board.jsp">LV4</a></li>
                 </ul>
               </li>
 
@@ -78,10 +78,10 @@ out.println(C);
                   SQL injection
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="SQL1/board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="SQL2/board.jsp">LV2</a></li>
-                  <li><a class="dropdown-item" href="SQL3/board.jsp">Lv3</a></li>
-                  <li><a class="dropdown-item" href="SQL4/board.jsp">LV4</a></li>
+                  <li><a class="dropdown-item" href="../SQL1/board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="../SQL2/board.jsp">LV2</a></li>
+                  <li><a class="dropdown-item" href="../SQL3/board.jsp">Lv3</a></li>
+                  <li><a class="dropdown-item" href="../SQL4/board.jsp">LV4</a></li>
                 </ul>
               </li>
 
@@ -90,8 +90,8 @@ out.println(C);
                   파일 업/다운로드
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
+                  <li><a class="dropdown-item" href="../board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="../board.jsp">LV2</a></li>
                 </ul>
               </li>
 
@@ -100,8 +100,8 @@ out.println(C);
                   세션
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
+                  <li><a class="dropdown-item" href="../board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="../board.jsp">LV2</a></li>
                 </ul>
               </li>
         

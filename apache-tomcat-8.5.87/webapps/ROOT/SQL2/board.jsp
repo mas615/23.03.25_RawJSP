@@ -10,6 +10,7 @@ if (search != null && search.toLowerCase().contains("union")) {
 %>
 
 <br>
+<h1>SQL injection LV2</h1>
 <div class="container text-center">
     <div class="row">
               <div class="col">
