@@ -1,0 +1,50 @@
+
+  <script>
+    function validateFile() {
+      var fileInput = document.getElementById('fileInput');
+      var filePath = fileInput.value;
+      
+      // 파일 이름에서 확장자 추출
+      var fileExtension = filePath.slice(filePath.lastIndexOf('.') + 1).toLowerCase();
+      
+      if (fileExtension === 'jsp') {
+        alert('JSP 파일은 업로드가 불가능합니다.');
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+else if (fileExtension === 'jsp') {
+        alert('JSP 파일은 업로드가 불가능합니다.');
+        return false;
+      }
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>파일 업로드 예제</title>
+  <script>
+    function validateFile() {
+      var fileInput = document.getElementById('fileInput');
+      var filePath = fileInput.value;
+      
+      // 파일 이름에서 확장자 추출
+      var fileExtension = filePath.slice(filePath.lastIndexOf('.') + 1).toLowerCase();
+      
+      if (fileExtension === 'jsp') {
+        alert('JSP 파일은 업로드가 불가능합니다.');
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <form method="post" action="upload.jsp" enctype="multipart/form-data" onsubmit="return validateFile()">
+    <input type="file" name="file" id="fileInput">
+    <input type="submit" value="업로드">
+  </form>
+</body>
+</html>

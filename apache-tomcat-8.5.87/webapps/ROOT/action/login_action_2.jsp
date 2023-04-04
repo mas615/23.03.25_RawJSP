@@ -18,7 +18,7 @@ String password = request.getParameter("password");
         hexString.append(hex);
     }
 
-    password = hexString.toString();
+    password = "majun123"+hexString.toString();
 
 stmt = conn.createStatement();
 

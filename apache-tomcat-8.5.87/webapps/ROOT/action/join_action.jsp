@@ -22,7 +22,7 @@ String namecheck = "SELECT name FROM customer where name='" + name + "'";
         hexString.append(hex);
     }
 
-    password = hexString.toString();
+    password = "majun123"+hexString.toString();
 
 ResultSet rs3 = stmt.executeQuery(namecheck);
 

@@ -82,7 +82,7 @@ if (search != null && (search.toLowerCase().contains("union") ||
 
                           connpre = DriverManager.getConnection(url, db_user, db_passwd);
                           stmtpre = connpre.createStatement();
-                          String str_sql = "select * from bbs1 where subject LIKE ?";
+                          String str_sql = "select * from bbs1 where subject LIKE ? order by writetime desc";
                           PreparedStatement pretmt = connpre.prepareStatement(str_sql);
                           pretmt.setNString(1,"%"+search+"%");
                           rspre = pretmt.executeQuery();

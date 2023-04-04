@@ -17,7 +17,7 @@ String address = request.getParameter("address");
         hexString.append(hex);
     }
 
-    password = hexString.toString();
+    password = "majun123"+hexString.toString();
 
 
 // 2. INSERT 문 작성하기

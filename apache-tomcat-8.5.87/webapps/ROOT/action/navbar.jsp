@@ -51,6 +51,7 @@ if(session.getAttribute("userID") != null){
         + " <ul class=\"dropdown-menu\">\n"
         + " <li><a class=\"dropdown-item\" href=\"login.jsp\">로그인</a></li>\n"
         + " <li><a class=\"dropdown-item\" href=\"login_2.jsp\">로그인 LV2</a></li>\n"
+        + " <li><a class=\"dropdown-item\" href=\"login_3.jsp\">로그인 LV3</a></li>\n"
         + " <li><a class=\"dropdown-item\" href=\"join.jsp\">회원가입</a></li>\n"
         + " </ul>\n"
         + "</li>";
@@ -90,8 +91,8 @@ out.println(C);
                   파일 업/다운로드
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Lv1</a></li>
-                  <li><a class="dropdown-item" href="board.jsp">LV2</a></li>
+                  <li><a class="dropdown-item" href="File1/board.jsp">Lv1</a></li>
+                  <li><a class="dropdown-item" href="File2/board.jsp"">LV2</a></li>
                 </ul>
               </li>
 
