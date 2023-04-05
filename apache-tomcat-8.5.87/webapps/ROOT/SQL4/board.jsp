@@ -15,6 +15,7 @@ if (search != null && (search.toLowerCase().contains("union") ||
 
 <br>
 <h1>SQL injection LV4</h1>
+<h5 style="color:whitesmoke;">PreparedStatement.</h5>
 <div class="container text-center">
     <div class="row">
               <div class="col">

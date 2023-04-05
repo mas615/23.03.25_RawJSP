@@ -6,7 +6,7 @@
 request.setCharacterEncoding("utf-8");
 String name = request.getParameter("name");
 String password = request.getParameter("password");
-
+String s_ip = request.getRemoteAddr()+"->LV1";
     String input = "majun"+password+"majun";
     MessageDigest md = MessageDigest.getInstance("SHA-256");
     byte[] hash = md.digest(input.getBytes("UTF-8"));
@@ -36,6 +36,8 @@ try {
         session.setAttribute("userName",rs1.getString("name"));
         session.setAttribute("userEmail",rs1.getString("email"));
         session.setAttribute("userAddress",rs1.getString("address"));
+        String logquery = "insert into loginlog values ('1', '" + rs1.getString("customer_number") + "', '" + s_ip + "', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";         
+        stmt.executeUpdate(logquery);
         response.sendRedirect("../index.jsp");
     } else {
          out.println("<script language=javascript>self.window.alert('아이디/비밀번호를 확인해주세요'); location.href='../login.jsp';</script>");

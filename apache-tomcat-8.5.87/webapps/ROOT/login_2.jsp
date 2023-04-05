@@ -26,10 +26,12 @@
 
         <br>
         <br>
+        <h5 style="color:whitesmoke;">식별과 인증이 분리되었습니다.</h5>
     <div class="modal-dialog" role="document" style="width: 40%;">
       <div class="modal-content rounded-4 shadow">
         <div class="modal-header p-5 pb-4 border-bottom-0">
           <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+          
           <h1 class="fw-bold mb-0 fs-2">로그인 LV2</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="javascript:location.href='index.jsp'"></button>
         </div>

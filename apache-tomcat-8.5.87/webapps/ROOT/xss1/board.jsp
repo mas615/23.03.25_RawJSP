@@ -7,6 +7,7 @@ String order=request.getParameter("order");
 %>
 <br>
 <h1>XSS LV1</h1>
+<h5 style="color:whitesmoke;">스크립트태그가 자바스크립트에 의해 필터링되었습니다.</h5>
 <div class="container text-center">
     <div class="row">
               <div class="col">

@@ -24,11 +24,11 @@
 
                 String driverName="oracle.jdbc.driver.OracleDriver";
 
-                String dbURL = "jdbc:oracle:thin:@localhost:1521:xe";
+                String dbURL = "jdbc:oracle:thin:@3.36.127.85:1521:xe";
 
                 Class.forName(driverName);
 
-                Connection conn = DriverManager.getConnection(dbURL,"jsp","root");
+                Connection conn = DriverManager.getConnection(dbURL,"system","root");
 
                 out.println("Oracle Database 에 접속 성공!");
 

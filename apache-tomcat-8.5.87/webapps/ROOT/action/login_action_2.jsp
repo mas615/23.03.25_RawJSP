@@ -6,6 +6,7 @@
 request.setCharacterEncoding("utf-8");
 String name = request.getParameter("name");
 String password = request.getParameter("password");
+String s_ip = request.getRemoteAddr()+"->LV2";
 
     String input = "majun"+password+"majun";
     MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -37,6 +38,8 @@ try {
             session.setAttribute("userName",rs1.getString("name"));
             session.setAttribute("userEmail",rs1.getString("email"));
             session.setAttribute("userAddress",rs1.getString("address"));
+            String logquery = "insert into loginlog values ('1', '" + rs1.getString("customer_number") + "', '" + s_ip + "', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";         
+            stmt.executeUpdate(logquery);
             response.sendRedirect("../index.jsp");
         }else{
             out.println("<script language=javascript>self.window.alert('패스워드가 일치하지 않습니다.'); location.href='../login_2.jsp';</script>");

@@ -7,6 +7,7 @@ String order=request.getParameter("order");
 %>
 <br>
 <h1>File LV1</h1>
+<h5 style="color:whitesmoke;">자바스크립트가 jsp확장자를 필터링합니다.</h5>
 <div class="container text-center">
     <div class="row">
               <div class="col">

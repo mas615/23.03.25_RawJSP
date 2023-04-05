@@ -6,7 +6,7 @@
 request.setCharacterEncoding("utf-8");
 String name = request.getParameter("name");
 String password = request.getParameter("password");
-String s_ip = request.getRemoteAddr();
+String s_ip = request.getRemoteAddr()"->LV3";
 
     String input = "majun"+password+"majun";
     MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -40,11 +40,7 @@ try {
             session.setAttribute("userAddress",rs1.getString("address"));
             
 
-            String logquery = "insert into loginlog values ('1', '" + rs1.getString("customer_number") + "', '" + s_ip + "', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";
-
-
-            
-
+            String logquery = "insert into loginlog values ('1', '" + rs1.getString("customer_number") + "', '" + s_ip + "', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";         
             stmt.executeUpdate(logquery);
 
 

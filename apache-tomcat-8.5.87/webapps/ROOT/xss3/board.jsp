@@ -7,6 +7,7 @@ String order=request.getParameter("order");
 %>
 <br>
 <h1>XSS LV3</h1>
+<h5 style="color:whitesmoke;">꺽새가 서버에 의해 필터링되었습니다.</h5>
 <div class="container text-center">
     <div class="row">
               <div class="col">
