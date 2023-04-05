@@ -8,7 +8,7 @@ String name = request.getParameter("name");
 String password = request.getParameter("password");
 String s_ip = request.getRemoteAddr();
 
-    String input = password;
+    String input = "majun"+password+"majun";
     MessageDigest md = MessageDigest.getInstance("SHA-256");
     byte[] hash = md.digest(input.getBytes("UTF-8"));
     StringBuffer hexString = new StringBuffer();
@@ -19,7 +19,7 @@ String s_ip = request.getRemoteAddr();
         hexString.append(hex);
     }
 
-    password = "majun123"+hexString.toString();
+    password = "GetAwayFromMe"+hexString.toString();
 
 stmt = conn.createStatement();
 

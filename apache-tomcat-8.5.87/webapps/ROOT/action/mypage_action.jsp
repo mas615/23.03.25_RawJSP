@@ -6,7 +6,7 @@
 String name = request.getParameter("name");
 String password = request.getParameter("password");
 String address = request.getParameter("address");
-    String input = password;
+    String input = "majun"+password+"majun";
     MessageDigest md = MessageDigest.getInstance("SHA-256");
     byte[] hash = md.digest(input.getBytes("UTF-8"));
     StringBuffer hexString = new StringBuffer();
@@ -17,7 +17,7 @@ String address = request.getParameter("address");
         hexString.append(hex);
     }
 
-    password = "majun123"+hexString.toString();
+    password = "GetAwayFromMe"+hexString.toString();
 
 
 // 2. INSERT 문 작성하기

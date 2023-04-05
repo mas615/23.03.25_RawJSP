@@ -11,7 +11,7 @@ String email = request.getParameter("email");
 String address =request.getParameter("address");
 String namecheck = "SELECT name FROM customer where name='" + name + "'";
 
-    String input = password;
+    String input = "majun"+password+"majun";
     MessageDigest md = MessageDigest.getInstance("SHA-256");
     byte[] hash = md.digest(input.getBytes("UTF-8"));
     StringBuffer hexString = new StringBuffer();
@@ -22,7 +22,7 @@ String namecheck = "SELECT name FROM customer where name='" + name + "'";
         hexString.append(hex);
     }
 
-    password = "majun123"+hexString.toString();
+    password = "GetAwayFromMe"+hexString.toString();
 
 ResultSet rs3 = stmt.executeQuery(namecheck);
 

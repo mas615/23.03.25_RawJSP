@@ -7,7 +7,7 @@ request.setCharacterEncoding("utf-8");
 String name = request.getParameter("name");
 String password = request.getParameter("password");
 
-    String input = password;
+    String input = "majun"+password+"majun";
     MessageDigest md = MessageDigest.getInstance("SHA-256");
     byte[] hash = md.digest(input.getBytes("UTF-8"));
     StringBuffer hexString = new StringBuffer();
@@ -18,7 +18,7 @@ String password = request.getParameter("password");
         hexString.append(hex);
     }
 
-    password = "majun123"+hexString.toString();
+    password = "GetAwayFromMe"+hexString.toString();
 
 stmt = conn.createStatement();
 
