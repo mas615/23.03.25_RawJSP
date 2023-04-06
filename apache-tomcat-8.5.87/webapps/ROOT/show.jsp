@@ -30,8 +30,6 @@ writer = rs2.getString("name").trim();
 	out.println("없는 게시글입니다.");
 }
 rs2.close();
-stmt2.close();
-conn2.close();
 %>
 <% if(filename != null ){ %>
 <tr class='table-primary'>
@@ -83,8 +81,24 @@ conn2.close();
 		<input name="bo_num" type="hidden" value="<%= num %>">
 		<input name="co_name" type="hidden" value="<%= curUser %>">
 	</form>	
-
-
+	<table class="table table-striped table-hover">
+		  <th>댓글작성자</th>
+		  <th>댓글</th>
+		  <th>시간</th>
+<%
+ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+        while (rs5.next()) {
+          out.println("<tr>");
+          out.println("<td>" + rs5.getString("name") + "</td>");
+          out.println("<td>" + rs5.getString("rememo") + "</td>");
+          out.println("<td>" + rs5.getString("time") + "</td>");
+          out.println("</tr>");
+      }
+      rs5.close();
+      stmt2.close();
+      conn2.close();
+%>
+	</table>
 
 
 </div>
