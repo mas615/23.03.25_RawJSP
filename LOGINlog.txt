@@ -1,0 +1,1 @@
+select customer.name,loginlog.customer_number,loginlog.ip from loginlog,customer where loginlog.customer_number=customer.customer_number

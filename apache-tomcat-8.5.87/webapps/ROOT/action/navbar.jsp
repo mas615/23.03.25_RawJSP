@@ -60,13 +60,12 @@ out.println(C);
 %>
               
               
-              
+              <a class="nav-link" href="board.jsp">게시판 ( RED ZONE )</a>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="list_test2.jsp" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   XSS
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="board.jsp">Basic</a></li>
                   <li><a class="dropdown-item" href="xss1/board.jsp">Lv1</a></li>
                   <li><a class="dropdown-item" href="xss2/board.jsp">LV2</a></li>
                   <li><a class="dropdown-item" href="xss3/board.jsp">LV3</a></li>

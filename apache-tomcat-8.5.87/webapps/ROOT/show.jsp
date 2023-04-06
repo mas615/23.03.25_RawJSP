@@ -43,17 +43,50 @@ conn2.close();
 </td>
 <br>
 <div class="btn-group" role="group" aria-label="Basic example">
-<% if (curUser != null && writer != null && writer.equals(curUser)) { %>
+<% if (curUser != null && writer != null && (writer.equals(curUser) || curUser.equals("admin2"))) { %>
     <a href="action/delete_action.jsp?majun='<%= num %>'" role="button" class="btn btn-primary">글 삭제</a>
 	<a href="edit.jsp?num=<%= num %>" role="button" class="btn btn-primary">글 수정</a>	
 <% }; %>
-	<a href="board.jsp" role="button" class="btn btn-primary">목록보기</a>	
+	<a href="board.jsp" role="button" class="btn btn-primary">목록보기</a>
 </div>
 </div>
 <div class="col">
 </div>
 </div>
-</div>
 
+<br>
+<script language='javascript'>
+
+	function check_submit(){
+
+		if (document.myForm.comment.value == "") {
+			alert('내용을 입력하세요.');
+			document.myForm.comment.focus();
+			return;
+
+		}else if(document.myForm.co_name.value == "null"){
+			alert('로그인먼저 하세요..');
+			document.myForm.comment.focus();
+			return;
+
+		}else {
+			document.myForm.action = 'action/comment_action.jsp';
+			document.myForm.submit();
+		}
+
+	}
+</script>
+
+	<form name="myForm" action="/action/comment_action.jsp">
+		<input name="comment" type="text" placeholder="댓글달기">
+		<button type="button" class="btn btn-primary" id="btn-save" onclick='javascript:check_submit();'>등록</button>
+		<input name="bo_num" type="hidden" value="<%= num %>">
+		<input name="co_name" type="hidden" value="<%= curUser %>">
+	</form>	
+
+
+
+
+</div>
 </body>
 </html>

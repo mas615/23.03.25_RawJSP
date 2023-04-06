@@ -43,7 +43,7 @@ conn2.close();
 </td>
 <br>
 <div class="btn-group" role="group" aria-label="Basic example">
-<% if (curUser != null && writer != null && writer.equals(curUser)) { %>
+<% if (curUser != null && writer != null && (writer.equals(curUser) || curUser.equals("admin"))) { %>
     <a href="action/delete_action.jsp?majun='<%= num %>'" role="button" class="btn btn-primary">글 삭제</a>
 	<a href="edit.jsp?num=<%= num %>" role="button" class="btn btn-primary">글 수정</a>	
 <% }; %>
