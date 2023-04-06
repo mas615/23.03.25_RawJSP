@@ -81,12 +81,13 @@ rs2.close();
 		<input name="bo_num" type="hidden" value="<%= num %>">
 		<input name="co_name" type="hidden" value="<%= curUser %>">
 	</form>	
+	댓글은 삭제가 불가능합니다. 신중하게 작성해주세요.
 	<table class="table table-striped table-hover">
 		  <th>댓글작성자</th>
 		  <th>댓글</th>
 		  <th>시간</th>
 <%
-ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num);
         while (rs5.next()) {
           out.println("<tr>");
           out.println("<td>" + rs5.getString("name") + "</td>");

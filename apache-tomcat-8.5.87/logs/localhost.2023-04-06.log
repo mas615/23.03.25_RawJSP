@@ -576,3 +576,733 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1623)
+06-Apr-2023 14:46:39.333 SEVERE [http-nio-8000-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [85] 행에서 오류가 발생했습니다.
+bo_num cannot be resolved to a variable
+82: 		<input name="co_name" type="hidden" value="<%= curUser %>">
+83: 	</form>	
+84: <%
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+bo_num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [86] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+83: 	</form>	
+84: <%
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+bo_num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [88] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+bo_num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+92:       }
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+92:       }
+93:       rs5.close();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [85] 행에서 오류가 발생했습니다.
+bo_num cannot be resolved to a variable
+82: 		<input name="co_name" type="hidden" value="<%= curUser %>">
+83: 	</form>	
+84: <%
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+bo_num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [86] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+83: 	</form>	
+84: <%
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+bo_num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [88] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+bo_num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+92:       }
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+92:       }
+93:       rs5.close();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+06-Apr-2023 14:50:04.009 SEVERE [http-nio-8000-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [86] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+83: 	</form>	
+84: <%
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [88] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+92:       }
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+92:       }
+93:       rs5.close();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [86] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+83: 	</form>	
+84: <%
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [88] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+85: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86:         while (r5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+92:       }
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:           out.println("<tr>");
+88:           out.println("<td>" + r5.getString("name") + "</td>");
+89:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + r5.getString("time") + "</td>");
+91:           out.println("</tr>");
+92:       }
+93:       rs5.close();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+06-Apr-2023 14:51:40.945 SEVERE [http-nio-8000-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [86] 행에서 오류가 발생했습니다.
+Duplicate local variable rs5
+83: 	</form>	
+84: <%
+85: ResultSet rs5 = null;
+86: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [87] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+84: <%
+85: ResultSet rs5 = null;
+86: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+
+
+JSP 파일 [/show.jsp]의 [91] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+94:       rs5.close();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [86] 행에서 오류가 발생했습니다.
+Duplicate local variable rs5
+83: 	</form>	
+84: <%
+85: ResultSet rs5 = null;
+86: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [87] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+84: <%
+85: ResultSet rs5 = null;
+86: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86: ResultSet rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+
+
+JSP 파일 [/show.jsp]의 [91] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+94:       rs5.close();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+06-Apr-2023 14:51:54.967 SEVERE [http-nio-8000-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [87] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+84: <%
+85: ResultSet rs5 = null;
+86: rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86: rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+
+
+JSP 파일 [/show.jsp]의 [91] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+94:       rs5.close();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [87] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+84: <%
+85: ResultSet rs5 = null;
+86: rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86: rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+
+
+JSP 파일 [/show.jsp]의 [91] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+94:       rs5.close();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+06-Apr-2023 14:52:00.424 SEVERE [http-nio-8000-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [87] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+84: <%
+85: ResultSet rs5 = null;
+86: rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86: rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+
+
+JSP 파일 [/show.jsp]의 [91] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+94:       rs5.close();
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/show.jsp]의 [87] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+84: <%
+85: ResultSet rs5 = null;
+86: rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+
+
+JSP 파일 [/show.jsp]의 [89] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+86: rs5 = stmt2.executeQuery("select * from retable where bo_num="+num+" order by time DESC");
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+
+
+JSP 파일 [/show.jsp]의 [90] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+87:         while (r5.next()) {
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+
+
+JSP 파일 [/show.jsp]의 [91] 행에서 오류가 발생했습니다.
+r5 cannot be resolved
+88:           out.println("<tr>");
+89:           out.println("<td>" + r5.getString("name") + "</td>");
+90:           out.println("<td>" + r5.getString("remamo") + "</a>" + "</td>");
+91:           out.println("<td>" + r5.getString("time") + "</td>");
+92:           out.println("</tr>");
+93:       }
+94:       rs5.close();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+06-Apr-2023 14:52:39.691 SEVERE [http-nio-8000-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [89]에서 [/show.jsp]을(를) 처리하는 중 예외 발생
+
+86:         while (rs5.next()) {
+87:           out.println("<tr>");
+88:           out.println("<td>" + rs5.getString("name") + "</td>");
+89:           out.println("<td>" + rs5.getString("remamo") + "</a>" + "</td>");
+90:           out.println("<td>" + rs5.getString("time") + "</td>");
+91:           out.println("</tr>");
+92:       }
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.sql.SQLException: 부적합한 열 이름
+		at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3677)
+		at oracle.jdbc.driver.OracleResultSetImpl.findColumn(OracleResultSetImpl.java:2749)
+		at oracle.jdbc.driver.OracleResultSet.getString(OracleResultSet.java:494)
+		at org.apache.jsp.show_jsp._jspService(show_jsp.java:403)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:582)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:494)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1695)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+06-Apr-2023 20:10:18.159 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+06-Apr-2023 20:10:18.159 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+06-Apr-2023 20:10:18.160 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@37c49744')
+06-Apr-2023 20:21:22.441 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+06-Apr-2023 20:21:22.441 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+06-Apr-2023 20:21:22.459 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4a3a012c')
