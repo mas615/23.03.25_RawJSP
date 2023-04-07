@@ -6,7 +6,7 @@
 request.setCharacterEncoding("utf-8");
 String name = request.getParameter("name");
 String password = request.getParameter("password");
-String s_ip = request.getRemoteAddr()"->LV3";
+String s_ip = request.getRemoteAddr()+"->LV3";
 
     String input = "majun"+password+"majun";
     MessageDigest md = MessageDigest.getInstance("SHA-256");

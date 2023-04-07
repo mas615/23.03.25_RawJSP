@@ -25,7 +25,8 @@
         </script>
    
 
-      <div class="modal-dialog" role="document" style="width: 40%;">
+   <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+    <div class="modal-dialog" role="document">
         <div class="modal-content rounded-4 shadow">
           <div class="modal-header p-5 pb-4 border-bottom-0">
             <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
@@ -58,6 +59,6 @@
           </div>
         </div>
       </div>
-
+  </div>
 </body>
 </html>

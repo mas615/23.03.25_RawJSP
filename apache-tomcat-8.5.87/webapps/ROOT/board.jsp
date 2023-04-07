@@ -38,12 +38,12 @@ String order=request.getParameter("order");
 
     <table class="table table-striped table-hover">
       <% if(search != null){ %>
-        <th>게시글 번호<a href="board.jsp?order=to_number(board_number)&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=to_number(board_number) desc">△</a></th>
-        <th>제목<a href="board.jsp?order=subject&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=subject desc">△</a></th>
-        <th>작성자<a href="board.jsp?order=name&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=name desc">△</a></th>
-        <th>작성시간<a href="board.jsp?order=writetime&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=writetime desc">△</a></th>
+        <th width="20%">No.<a href="board.jsp?order=to_number(board_number)&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=to_number(board_number) desc">△</a></th>
+        <th >제목<a href="board.jsp?order=subject&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=subject desc">△</a></th>
+        <th width="20%">작성자<a href="board.jsp?order=name&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=name desc">△</a></th>
+        <th width="20%">시간<a href="board.jsp?order=writetime&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=writetime desc">△</a></th>
         <% }else{ %>
-        <th>게시글 번호
+        <th width="20%">No.
           <a href="board.jsp?order=to_number(board_number)">▼</a>
           <a href="board.jsp?order=to_number(board_number) desc">△</a>
         </th>
@@ -51,11 +51,11 @@ String order=request.getParameter("order");
           <a href="board.jsp?order=subject">▼</a>
           <a href="board.jsp?order=subject desc">△</a>
         </th>
-        <th>작성자
+        <th width="20%">작성자
           <a href="board.jsp?order=name">▼</a>
           <a href="board.jsp?order=name desc">△</a>
         </th>
-        <th>작성시간
+        <th width="20%">시간
           <a href="board.jsp?order=writetime">▼</a>
           <a href="board.jsp?order=writetime desc">△</a>
         </th>        

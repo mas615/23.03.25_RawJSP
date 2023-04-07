@@ -29,8 +29,8 @@ if(session.getAttribute("userID") != null){
                 "    <a class=\"nav-link active dropdown-toggle\" aria-current=\"page\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">";
             String B = "님 환영합니다</a>\n" +
             "<ul class=\"dropdown-menu\">\n" +
+              "<li><a class=\"dropdown-item\" href=\"mypage.jsp\">내정보</a></li>\n" +
             "<li><a class=\"dropdown-item\" href=\"action/logout_action.jsp\">로그아웃</a></li>\n" +
-            "<li><a class=\"dropdown-item\" href=\"mypage.jsp\">내정보</a></li>\n" +
             "</ul>\n" +
             "</li>";
 
