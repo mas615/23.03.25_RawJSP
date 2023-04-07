@@ -29,15 +29,19 @@ rs2.close();
 %>
 <% if(filename != null ){ %>
 <tr class='table-primary'>
-	<td class='table-primary'>파일다운로드</td>
-	<td class='table-primary'><a href="action/filedown_action.jsp?fileName=<%= filename %>"><%= originfilename %></a></td>
+	<td class='table-primary'>첨부사진<br></td>
+	<td class='table-primary'><img src="data1/<%= filename %>" style="max-width: 100%; height: auto;"></td>
 </tr>
 <% }; %> 
 </table>
 </td>
 </div>
+
 					<div align="center">
 						<div class="btn-group " role="group" aria-label="Basic example">
+							<% if(filename != null ){ %>
+								<a href="action/filedown_action.jsp?fileName=<%= filename %>" role="button" class="btn btn-primary">다운로드</a>
+							<% }; %> 
 						<% if (curUser != null && writer != null && (writer.equals(curUser) || curUser.equals("admin2"))) { %>
 							<a href="action/delete_action.jsp?majun='<%= num %>'" role="button" class="btn btn-primary">글 삭제</a>
 							<a href="edit.jsp?num=<%= num %>" role="button" class="btn btn-primary">글 수정</a>	
