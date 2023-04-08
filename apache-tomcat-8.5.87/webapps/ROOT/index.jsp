@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="action/navbar.jsp" %>
+<%@ include file="action/conn_db2.jsp" %>
 <br>
 <div class="container text-center">
   <div class="row">
@@ -24,15 +25,34 @@ Brute Force Attack 와 DDOS는 대상에 없습니다. ( 하지 마세요 )
 
 문제점은 XSS3 게시판에 작성해주시면 반영하도록 하겠습니다.
 
-마지막 업데이트 : 2023-04-07 ( 38th 버전 )
+마지막 업데이트 : 2023-04-06 ( 38th 버전 )
 </pre>
 <a href="https://github.com/mas615/23.03.25_RawJSP.git" >https://github.com/mas615/23.03.25_RawJSP.git</a><br>
 <a href="https://manivers.tistory.com/" >https://manivers.tistory.com/</a>
+<table class="table table-striped table-hover">
+  <th>접속자(최근10명)</th>
+  <th>접속시간</th>
+  <%
+          
+            ResultSet rs3 = stmt2.executeQuery("select * from (select customer.name,loginlog.WRITETIME from loginlog,customer where loginlog.customer_number=customer.customer_number order by writetime desc) where ROWNUM <= 10");
+            while (rs3.next()) {
+              out.println("<tr>");
+              out.println("<td>" + rs3.getString("name") + "</td>");
+              out.println("<td>" + rs3.getString("WRITETIME") + "</td>");
+              out.println("</tr>");
+          }
+          rs3.close();
+          stmt2.close();
+          conn2.close();
+         
+  %>
+  </table>
     </div>
     <div class="col">
       
     </div>
   </div>
 </div>
+
   </body>
 </html>

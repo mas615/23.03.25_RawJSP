@@ -82,6 +82,7 @@ String order=request.getParameter("order");
         conn2.close();
         }else{
           ResultSet rs3 = stmt2.executeQuery("select * from bbs1"+orderby);
+            
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");

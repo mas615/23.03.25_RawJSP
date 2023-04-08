@@ -14,8 +14,10 @@ String curUser = (String) session.getAttribute("userName");
 if(rs2.next()){
 out.println("<tr class='table-primary'><td class='table-primary'>제목</td><td class='table-primary'>"+rs2.getString("subject") + "</td></tr>");
 out.println("<tr class='table-primary'><td class='table-primary'>작성자이름</td><td class='table-primary'>"+rs2.getString("name")+"</td></tr>");
-out.println("<tr class='table-primary'><td class='table-primary'>작성시간</td><td class='table-primary'>"+rs2.getString("writetime") + "</td></tr>");
-out.println("<tr class='table-primary'><td class='table-primary'>내용</td><td class='table-primary'>"+rs2.getString("memo") + "</td></tr>");
+out.println("<tr class='table-primary'><td class='table-primary'>작성시간</td><td class='table-primary'>"+rs2.getString("writetime") + "</td></tr>"); %>
+<tr class='table-primary'><td class='table-primary'>내용</td><td class='table-primary'><div class="comment-message" style="white-space: pre-wrap;" ><%= rs2.getString("memo") %></div></td></tr>
+
+<%
 if(rs2.getString("email") != null){
 	filename = rs2.getString("email");
 }
