@@ -38,12 +38,14 @@ String order=request.getParameter("order");
 
     <table class="table table-striped table-hover">
       <% if(search != null){ %>
-        <th width="20%">No.</th>
+        <th width="20%">No.<a href="board.jsp?order=to_number(board_number)&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=to_number(board_number) desc">△</a></th>
         <th >제목<a href="board.jsp?order=subject&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=subject desc">△</a></th>
         <th width="20%">작성자<a href="board.jsp?order=name&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=name desc">△</a></th>
         <th width="20%">시간<a href="board.jsp?order=writetime&search=<%= search %>">▼</a><a href="board.jsp?search=<%= search %>&order=writetime desc">△</a></th>
         <% }else{ %>
         <th width="20%">No.
+          <a href="board.jsp?order=to_number(board_number)">▼</a>
+          <a href="board.jsp?order=to_number(board_number) desc">△</a>
         </th>
         <th>제목
           <a href="board.jsp?order=subject">▼</a>
@@ -66,7 +68,7 @@ String order=request.getParameter("order");
         }
   
         if(search != null){
-          ResultSet rs3 = stmt2.executeQuery("select * from bbs1 where subject LIKE'%"+search+"%' order by "+orderby);
+          ResultSet rs3 = stmt2.executeQuery("select * from bbs1 where subject LIKE'%"+search+"%'"+orderby);
           while (rs3.next()) {
             out.println("<tr>");
             out.println("<td>" + rs3.getInt("board_number") + "</td>");
@@ -83,11 +85,11 @@ String order=request.getParameter("order");
             
         while (rs3.next()) {
           out.println("<tr>");
-            out.println("<td>" + rs3.getInt("board_number") + "</td>");
-            out.println("<td>" + "<a href='show.jsp?num=" + rs3.getInt("board_number") + "'>" + rs3.getString("subject") + " (" + rs3.getString("BO_NUM_COUNT") +")</a>" + "</td>");
-            out.println("<td>" + rs3.getString("name") + "</td>");
-            out.println("<td>" + rs3.getString("writetime") + "</td>");
-            out.println("</tr>");
+          out.println("<td>" + rs3.getInt("board_number") + "</td>");
+          out.println("<td>" + "<a href='show.jsp?num=" + rs3.getInt("board_number") + "'>" + rs3.getString("subject") + " (" + rs3.getString("BO_NUM_COUNT") +")</a>" + "</td>");
+          out.println("<td>" + rs3.getString("name") + "</td>");
+          out.println("<td>" + rs3.getString("writetime") + "</td>");
+          out.println("</tr>");
       }
       rs3.close();
       stmt2.close();
