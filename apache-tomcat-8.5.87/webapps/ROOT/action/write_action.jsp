@@ -22,6 +22,7 @@ String fileName = multi.getFilesystemName("file");
 String original = multi.getOriginalFileName("file");
 String s_ip = "123";
 out.println(s_subject);
+String cus_num = session.getAttribute("userID").toString();
  
 
 try {
@@ -37,6 +38,8 @@ try {
 	pstmt.setNString(6,s_memo);
 	pstmt.setNString(7,s_ip);
 	pstmt.executeUpdate();
+	String logquery = "MERGE INTO point_table USING DUAL ON (CUSTOMER_NUMBER = '" + cus_num + "' ) WHEN MATCHED THEN UPDATE SET POINT=POINT+300,WRITETIME=TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') WHEN NOT MATCHED THEN INSERT (CUSTOMER_NUMBER,POINT,WRITETIME) VALUES ('" + cus_num + "',100,TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";         
+    pstmt.executeUpdate(logquery);
 	pstmt.close(); 
 	conn.close();
 

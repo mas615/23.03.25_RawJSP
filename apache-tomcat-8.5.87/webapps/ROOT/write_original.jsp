@@ -1,13 +1,9 @@
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
-<%@ include file="../action/navbar2.jsp" %>
+<%@ include file="action/navbar.jsp" %>
 
         <script language='javascript'>
 
             function check_submit(){
-                var fileInput = document.getElementById('fileInput');
-                var filePath = fileInput.value;                
-                // 파일 이름에서 확장자 추출
-                var fileExtension = filePath.slice(filePath.lastIndexOf('.') + 1).toLowerCase();
 
                 if (document.myForm.name.value == "") {
                     alert('이름을 입력하세요');
@@ -29,9 +25,6 @@
                     document.myForm.memo.focus();
                     return
 
-                }else if (fileExtension === 'jsp') {
-                    alert('JSP 파일은 업로드가 불가능합니다.');
-                    return false;
                 }else {
                     document.myForm.action = 'action/write_action.jsp';
                     document.myForm.submit();
@@ -59,7 +52,7 @@
             <label for="content"> 파일 </label>
             <br>
             <div class="input-group">
-                <input type="file" name="file" id="fileInput" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept=".gif, .jpg, .png, .txt" >
+                <input type="file" name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
             </div>
           </form>
           <br>
