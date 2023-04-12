@@ -30,14 +30,16 @@ Brute Force Attack 와 DDOS는 대상에 없습니다. ( 하지 마세요 )
 <a href="https://github.com/mas615/23.03.25_RawJSP.git" >https://github.com/mas615/23.03.25_RawJSP.git</a><br>
 <a href="https://manivers.tistory.com/" >https://manivers.tistory.com/</a>
 <table class="table table-striped table-hover">
-  <th>접속자(최근10명)</th>
-  <th>접속시간</th>
+  <th>포인트랭킹(top 5)</th>
+  <th>포인트</th>
+  <th>마지막 접속 날짜</th>
   <%
           
-            ResultSet rs3 = stmt2.executeQuery("select * from (select customer.name,loginlog.WRITETIME from loginlog,customer where loginlog.customer_number=customer.customer_number order by writetime desc) where ROWNUM <= 10");
+            ResultSet rs3 = stmt2.executeQuery("select * from (select customer.name,point_table.POINT,point_table.WRITETIME from point_table,customer where point_table.customer_number=customer.customer_number order by point desc) where ROWNUM <= 10");
             while (rs3.next()) {
               out.println("<tr>");
               out.println("<td>" + rs3.getString("name") + "</td>");
+              out.println("<td>" + rs3.getString("point") + "P</td>");
               out.println("<td>" + rs3.getString("WRITETIME") + "</td>");
               out.println("</tr>");
           }

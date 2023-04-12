@@ -36,7 +36,10 @@ try {
         session.setAttribute("userName",rs1.getString("name"));
         session.setAttribute("userEmail",rs1.getString("email"));
         session.setAttribute("userAddress",rs1.getString("address"));
+        String cus_num = rs1.getString("customer_number");
         String logquery = "insert into loginlog values ('1', '" + rs1.getString("customer_number") + "', '" + s_ip + "', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";         
+        stmt.executeUpdate(logquery);
+        logquery = "MERGE INTO point_table USING DUAL ON (CUSTOMER_NUMBER = '" + cus_num + "' ) WHEN MATCHED THEN UPDATE SET POINT=POINT+200,WRITETIME=TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') WHEN NOT MATCHED THEN INSERT (CUSTOMER_NUMBER,POINT,WRITETIME) VALUES ('" + cus_num + "',100,TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";         
         stmt.executeUpdate(logquery);
         response.sendRedirect("../index.jsp");
     } else {

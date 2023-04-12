@@ -40,7 +40,7 @@ try {
             session.setAttribute("userAddress",rs1.getString("address"));
             
 
-            String logquery = "insert into loginlog values ('1', '" + rs1.getString("customer_number") + "', '" + s_ip + "', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))";         
+            String logquery = "MERGE INTO point_table USING DUAL ON (CUSTOMER_NUMBER = '"+rs1.getString("customer_number")+"' ) WHEN MATCHED THEN UPDATE SET POINT=POINT+100 WHEN NOT MATCHED THEN INSERT (CUSTOMER_NUMBER,POINT,WRITETIME) VALUES ('"+rs1.getString("customer_number")+"',100,sysdate);";         
             stmt.executeUpdate(logquery);
 
 
