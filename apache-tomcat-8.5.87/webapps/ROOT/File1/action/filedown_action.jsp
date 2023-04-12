@@ -10,11 +10,11 @@
 </head>
 <body>
 	<% 
-	
+	try{
 		request.setCharacterEncoding("utf-8");
 		
 		String fileName = request.getParameter("fileName");
-		String downLoadFile = request.getSession().getServletContext().getRealPath("/data1/"+fileName);
+		String downLoadFile = request.getSession().getServletContext().getRealPath("/File1/data1/"+fileName);
 	  
 		File file = new File(downLoadFile);
 	    FileInputStream in = new FileInputStream(downLoadFile);
@@ -40,6 +40,23 @@
 	    
 	    os.close();
 	    in.close();
+	}catch(Exception e){
+		%>
+			<html>
+			<head>
+			<meta charset="UTF-8">
+			<script language=javascript>
+			self.window.alert("파일을 찾을 수 없습니다.");
+			location.href="../../";
+			</script>
+			</head>
+			<body>
+			</body>
+			</html>
+
+		<%
+
+	}
 	    
 	%>
 </body>

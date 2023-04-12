@@ -6,7 +6,7 @@
 <%@ include file="../../action/conn_db_pstmt.jsp" %>
 
 <%
-String saveFolder = getServletContext().getRealPath("/") + "data1";
+String saveFolder = application.getRealPath("/File1/data1") ;
     String encType = "UTF-8";
     int maxSize = 5 * 1024 * 1024;
 MultipartRequest multi = null;
