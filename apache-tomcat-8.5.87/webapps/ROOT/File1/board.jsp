@@ -70,7 +70,7 @@ String order=request.getParameter("order");
         orderby = " order by writetime DESC";
       }
       if(search != null){
-        ResultSet rs3 = stmt2.executeQuery("select * from bbs1 where subject LIKE'%"+search+"%'"+orderby);
+        ResultSet rs3 = stmt2.executeQuery("select * from file1 where subject LIKE'%"+search+"%'"+orderby);
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");
@@ -83,7 +83,7 @@ String order=request.getParameter("order");
       stmt2.close();
       conn2.close();
       }else{
-        ResultSet rs3 = stmt2.executeQuery("select * from bbs1"+orderby);
+        ResultSet rs3 = stmt2.executeQuery("select * from file1"+orderby);
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");

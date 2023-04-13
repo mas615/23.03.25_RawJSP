@@ -10,7 +10,7 @@
 		<br><br>
 		<table class="table table-striped-columns">
 <% 
-rs2 = stmt2.executeQuery("select * from bbs1 where board_number=" + num);
+rs2 = stmt2.executeQuery("select * from file1 where board_number=" + num);
 String filename = null;
 String originfilename = null;
 String writer = null;

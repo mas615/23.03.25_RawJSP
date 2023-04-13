@@ -5,7 +5,7 @@
 String majun = request.getParameter("majun");
 
 // 2. INSERT 문 작성하기
-String query = "delete from bbs1 where board_number = "+majun;
+String query = "delete from file1 where board_number = "+majun;
 out.println(query);
 // 3. INSERT 문 실행하기
 try {
