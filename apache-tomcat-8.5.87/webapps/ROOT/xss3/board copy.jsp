@@ -6,8 +6,8 @@ String search=request.getParameter("search");
 String order=request.getParameter("order"); 
 %>
 <br>
-<h1>XSS LV1</h1>
-<h5 style="color:whitesmoke;">스크립트태그가 자바스크립트에 의해 필터링되었습니다.</h5>
+<h1>XSS LV3</h1>
+<h5 style="color:whitesmoke;">꺽새가 서버에 의해 필터링되었습니다.</h5>
 <div class="container text-center">
     <div class="row">
               <div class="col">
@@ -25,7 +25,7 @@ String order=request.getParameter("order");
                       <input type="text" class="form-control" name="search" value="<%= search %>" aria-label="Recipient's username" aria-describedby="button-addon2">
                       <% }else{ %>
                     <input type="text" class="form-control" name="search" placeholder="제목검색" aria-label="Recipient's username" aria-describedby="button-addon2">  
-                      <% } %>                                
+                      <% } %>                            
               </div>
               <div class="col">
                         <div class="input-group mb-3">                    
@@ -68,13 +68,11 @@ String order=request.getParameter("order");
         }
   
         if(search != null){
-          ResultSet rs3 = stmt2.executeQuery("select * from XSS1 where subject LIKE'%"+search+"%'"+orderby);
+          ResultSet rs3 = stmt2.executeQuery("select * from XSS3 where subject LIKE'%"+search+"%'"+orderby);
           while (rs3.next()) {
             out.println("<tr>");
             out.println("<td>" + rs3.getInt("board_number") + "</td>");
-            %>
-            <td><a href='show.jsp?num=<%= rs3.getInt("board_number") %>'><c:set var="memoValue" value='<%= rs3.getString("subject") %>'/><c:out value="${memoValue}"/></a></td>
-            <%
+            out.println("<td>" + "<a href='show.jsp?num=" + rs3.getInt("board_number") + "'>" + rs3.getString("subject") + "</a>" + "</td>");
             out.println("<td>" + rs3.getString("name") + "</td>");
             out.println("<td>" + rs3.getString("writetime") + "</td>");
             out.println("</tr>");
@@ -83,13 +81,11 @@ String order=request.getParameter("order");
         stmt2.close();
         conn2.close();
         }else{
-          ResultSet rs3 = stmt2.executeQuery("select * from XSS1"+orderby);
+          ResultSet rs3 = stmt2.executeQuery("select * from XSS3"+orderby);
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");
-          %>
-          <td><a href='show.jsp?num=<%= rs3.getInt("board_number") %>'><c:set var="memoValue" value='<%= rs3.getString("subject") %>'/><c:out value="${memoValue}"/></a></td>
-          <%
+          out.println("<td>" + "<a href='show.jsp?num=" + rs3.getInt("board_number") + "'>" + rs3.getString("subject") + "</a>" + "</td>");
           out.println("<td>" + rs3.getString("name") + "</td>");
           out.println("<td>" + rs3.getString("writetime") + "</td>");
           out.println("</tr>");

@@ -72,7 +72,9 @@ String order=request.getParameter("order");
           while (rs3.next()) {
             out.println("<tr>");
             out.println("<td>" + rs3.getInt("board_number") + "</td>");
-            out.println("<td>" + "<a href='show.jsp?num=" + rs3.getInt("board_number") + "'>" + rs3.getString("subject") + "</a>" + "</td>");
+            %>
+            <td><a href='show.jsp?num=<%= rs3.getInt("board_number") %>'><c:set var="memoValue" value='<%= rs3.getString("subject") %>'/><c:out value="${memoValue}"/></a></td>
+            <%
             out.println("<td>" + rs3.getString("name") + "</td>");
             out.println("<td>" + rs3.getString("writetime") + "</td>");
             out.println("</tr>");
@@ -85,7 +87,9 @@ String order=request.getParameter("order");
         while (rs3.next()) {
           out.println("<tr>");
           out.println("<td>" + rs3.getInt("board_number") + "</td>");
-          out.println("<td>" + "<a href='show.jsp?num=" + rs3.getInt("board_number") + "'>" + rs3.getString("subject") + "</a>" + "</td>");
+          %>
+          <td><a href='show.jsp?num=<%= rs3.getInt("board_number") %>'><c:set var="memoValue" value='<%= rs3.getString("subject") %>'/><c:out value="${memoValue}"/></a></td>
+          <%
           out.println("<td>" + rs3.getString("name") + "</td>");
           out.println("<td>" + rs3.getString("writetime") + "</td>");
           out.println("</tr>");
