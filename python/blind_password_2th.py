@@ -1,7 +1,7 @@
 import requests
 import time
 
-url = "http://3.36.127.85:8000/SQL3/board.jsp"
+url = "http://3.35.113.45:8000/SQL3/board.jsp"
 cookie = {'JSESSIONID': '6539B47081BDBCB23CDC83A6C4BF7CF0'}
 
 def find_length():
